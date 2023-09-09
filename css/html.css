@@ -1,0 +1,45 @@
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+}
+
+#contacto {
+    font-size: 10px;
+
+ }
+
+ footer {
+    padding-top: 40px;
+ }
+
+
+
+
+
+h1 {
+    text-align: center;
+    padding:20px ;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Rajdhani', sans-serif;
+  }
+ 
+#historia-html{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: ridge 3px white;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+#comenzar {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+}
