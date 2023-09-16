@@ -9,13 +9,13 @@ body {
 h1{
     padding: 20px;
     text-align: center;
-    
+    text-decoration: underline skyblue;
 }
 
 
 .yeah_buddy{
     padding: 20px;
-    border: ridge 3px white;
+    border: ridge 3px skyblue;
     border-radius: 20px;
     text-align: center;
     
