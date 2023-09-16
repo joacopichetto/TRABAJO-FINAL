@@ -6,8 +6,17 @@ body {
    text-align: center;
 }
 
-.yeah_buddy{
-   
+h1{
+    padding: 20px;
+    text-align: center;
     
-    border-radius: 20px ;
+}
+
+
+.yeah_buddy{
+    padding: 20px;
+    border: ridge 3px white;
+    border-radius: 20px;
+    text-align: center;
+    
 }
