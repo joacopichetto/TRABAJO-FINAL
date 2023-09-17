@@ -1,0 +1,52 @@
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: white;
+   text-align: center;
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline skyblue;
+}
+
+
+.yeah_buddy{
+    padding: 20px;
+    border: ridge 3px skyblue;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+
+#historia-css{
+    padding: 20px ;
+    border: ridge 3px skyblue;
+    border-radius: 20px;
+    text-align: center;
+}
+pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+code {
+    color: #333;
+
+}
+section{
+    text-align: center;
+    margin-bottom: 30px;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
