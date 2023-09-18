@@ -45,7 +45,10 @@ pre {
     display: block;
     font-family: monospace;
     white-space-collapse: preserve;
-    text-wrap: nowrap
+    text-wrap: nowrap;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 

@@ -132,6 +132,32 @@
 
 <p  style="color: beige;"> Definir la hoja de estilo en otro archivo tiene varias ventajas, por una parte tenemos el estilo CSS separado del código HTML y por otro lado podemos enlazar el mismo estilo desde muchas páginas web y para cambiar un estilo que afecta a muchas páginas sólo tenemos que hacerlo en un lugar.</p>
 
+<p style="color: beige;">2- Interno en la cabecera.
+
+  Mediante la etiqueta style podemos declarar un estilo dentro de la etiqueta head de un archivo HTML.
+  El atributo type="text/css" es opcional desde la versión HTML 5.
+
+Este sistema también mantiene el estilo CSS separado del código HTML, pero tiene el inconveniente que si tenemos que aplicarlo a más de un archivo HTML, deberemos repetirlo varias veces, y por lo tanto será más laborioso modificarlo.</p>
+
+<pre>
+  <code style="color: black;">
+    <head>
+      < style h2, p { color: red } < /style>
+    < / head >
+
+  </code>
+</pre>
+<p style="color: beige;">3- Dentro de la etiqueta.
+
+Podemos definir un estilo CSS dentro de una etiqueta HTML, el estilo sólo afectará a esa etiqueta, no actuará sobre otras etiquetas. No se puede definir una clase dentro de una etiqueta.
+
+Se escribe con el atributo style y las parejas de atributo: valor separadas por punto y coma, por ejemplo:</p>
+<pre>
+  <code style="color: black;">
+< div style="color: red; background-colo: white"> Ejemplo < /div>
+</code>
+</pre>
+<p style="color: beige;">Esta es la forma menos utilizada para definir estilos CSS ya que implica un acoplamiento máximo entre el estilo CSS y el código HTML, es decir, no mantiene el estilo CSS separado del código HTML. El inconveniente es que debemos escribir el estilo tantas veces como queramos que se aplique a cada etiqueta, y por lo tanto modificarlo sería muy laborioso. También haría aumentar el tamaño del archivo .html de forma innecesaria.</p>
 
 
 
