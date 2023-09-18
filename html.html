@@ -23,7 +23,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              SECCIONES
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="html.html">HTML</a></li>
@@ -33,10 +33,6 @@
             </ul>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -45,7 +41,7 @@
     
  <h1 style="color: beige;">¿QUE ES EL HTML?</h1>
  <div id="historia-html" class="col-sm">
-    <p>
+    <p class="border border-4">
         HTML fue creado a fines de la década de 1980 y principios de 1990.
         A través del uso de tags (etiquetas),
         podemos identificar qué es título dentro del documento, qué es un link que va a otro sitio, qué
@@ -79,13 +75,103 @@
     < span > para estilos de una parte del texto< /p ><br>
   </p>
   </div>
-  <div id="ramificacion">
-    <h3>ESTRUCTURA RAMIFICADA</h3>
-
-    <img src="img/Estructura-de-una-documento-HTML.png" alt="">
-    <img src="img/simple-p-tag.png" alt="">
+  <div id="ramificacion" class="container">
+    <h3>ESTRUCTURA BASICA Y RAMIFICADA</h3>
+    <p>
+●La declaración DOCTYPE le avisa al navegador que el
+documento que va a leer es HTML. <br>
+● El texto entre < html > y < /html> define dónde empieza y dónde
+termina el documento. <br>
+● El texto entre < head> y < /head> provee información (meta data)
+sobre el documento. Si bien no forma parte del contenido visible
+de la página, aporta información adicional que es muy útil para
+el navegador. <br>
+● El texto entre < title> y < /title> provee un título para el
+documento: lo que aparece escrito en la pestaña del navegador.
+Este contenido será mostrado por los motores de búsqueda en
+sus resultados.<br>
+Por ejemplo, Google usa esta meta data para entender el
+contenido de una página y decidir cómo posicionarla.
+● El texto entre < body> y < /body> describe el contenido visible
+del documento; es decir, lo que el navegador le mostrará al
+usuario.<br>
+● El texto entre < h1> y < /h1> describe un encabezado. El tag
+< h1> ('Heading 1') agranda la letra que contiene y la pone como
+título o encabezado.<br>
+● El texto entre < p> y < /p> describe un párrafo. El tag < p> genera
+un salto de línea al final, dándole forma de párrafo al texto que
+contiene.<br>
+    </p>
+    <img src="img/Estructura-de-una-documento-HTML.png"class="border border-5" id="imagennn">
+    <img src="img/simple-p-tag.png"class="border border-5" alt="">
   </div>
 
+  <div class="container">
+    <h1>COMENTARIOS</h1>
+     <p>En vscode podemos comentar la linea en donde nos
+      encontramos utilizando CTRL + }
+      los comentarios aparecen en verde y son lineas de codigo que
+      no se ejecutan, es decir, solo se leen en el codigo pero no
+      afectan a la pagina</p>
+        <img src="img/truco1-visual-studio-code-comentar-bloques-texto.gif" id="gif">
+  </div>
+
+  <div class="container">
+    <h1 class="rounded-end">TAGS DE HIPERVINCULO</h1>
+      <p class="rounded-pill">
+        los tags < a > sirven para hacer referencia a otras paginas
+      </p>
+      <p>
+        cada tag < a > tiene un atributo href que indica la pagina a la
+          cual ser redireccionado cuando se presione en el contenido
+      </p>
+      <img src="img/Captura.PNG" class="rounded-5 rounded-top-0" alt="...">
+      <p>
+        tambien se pueden enlazar urls de paginas ya existentes
+      </p>
+      <img src="img/Captura.PNG2.PNG"class="rounded-5 rounded-top-0" alt="">
+      <p>
+        El contenido de un tag < a > puede ser tambien una foto <br>
+        cuando el usuario haga click en la foto el navegador lo redireccionará a la otra pagina
+      </p>
+      <img src="img/Captura.PNG3.PNG"class="rounded-5 rounded-top-0" alt="">
+  </div>
+
+  <div class="container">
+    <h1>TAGS < DIV > Y < SPAN ></h1>
+    <h2>¿que son?</h2>
+    <p>
+      Las etiquetas < div  y < span > son contenedores vacíos que nos sirven para
+        agrupar el contenido de una página. Serían como cajas de vidrio que lo
+        rodean para, luego, poder modificarlo con CSS.
+    </p>
+  </div>
+
+  <div class="container">
+    <h1>INSPECTOR DE ELEMENTOS</h1>
+    <p>
+      El inspector de elementos del navegador es una herramienta que permite
+      analizar el código fuente de una web e interactuar con él.
+    </p>
+      <h2>
+        Sus funcionalidades principales son las siguientes:
+      </h2>
+      <p>
+        ● Muestra el código fuente de la web de forma interactiva. Al seleccionar
+        una parte de código, muestra la parte de la web que está creando, y
+        viceversa. <br>
+        ● Permite realizar modificaciones sobre el código fuente, reflejando los
+        cambios que se producirían en la web. Estos cambios únicamente son
+        visibles en nuestro navegador. <br>
+        ● Facilita la visualización de la web en distintas resoluciones. <br>
+      </p>
+      
+      
+      <img src="img/own-window.png" class="rounded-pill" alt="">
+      <h3>Para activarlo</h3>
+       <p>Para abrir el inspector en una determinada web, podemos pulsar la tecla F12 o
+        hacer clic derecho y seleccionar «Inspeccionar».</p>
+    </div>
 
 
     <script src="js/script.js"></script>
