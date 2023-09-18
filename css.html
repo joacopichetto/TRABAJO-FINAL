@@ -101,9 +101,43 @@
     </pre>
 </section>
 </main>
+<div class="contenedor">
 <H1 style="color: beige;">declaraciones de css</H1>
 
 <img src="img/declaracion.png" id="imagen" class="border border-5">
+
+<p style="color: beige;"> indica que cambiaremos y se pone{}.
+  se compone de propiedades, aspecto del elemento que queremos modificar,
+  valor a poner, define de que manera modificarenos la propiedad
+</p>
+
+<h1  style="color: beige;">donde y como declarar los estilos</h1>
+
+<p  style="color: beige;">1- Enlazado en otro archivo. Es la opción más recomendable. Consiste en crear un archivo de texto plano, preferiblemente, con la extensión .css, y escribir dentro la hoja de estilo. Para enlazar este archivo desde la página web escribiremos una etiqueta link, por ejemplo:</p>
+<pre>
+  <code style="color: black;">
+    < link rel="stylesheet" href="mi_hoja.css" >
+  </code>
+</pre>
+<p  style="color: beige;">El atributo rel debe tener el valor stylesheet, el atributo type="text/css" es opcional desde la versión 5 de HTML. La etiqueta link va dentro de la etiqueta head.</p>
+
+<p  style="color: beige;">Podemos incluir un atributo media para que la hoja de estilo se aplique sólo bajo determinadas condiciones. En el siguiente ejemplo se enlazará la hoja de estilo sólo si la anchura del dispositivo es menor o igual a 800px.</p>
+
+<pre>
+  <code style="color: black;">
+    < link rel="stylesheet" media="(max-width: 800px)" href="mi_hoja.css" / >
+
+  </code>
+</pre>
+
+<p  style="color: beige;"> Definir la hoja de estilo en otro archivo tiene varias ventajas, por una parte tenemos el estilo CSS separado del código HTML y por otro lado podemos enlazar el mismo estilo desde muchas páginas web y para cambiar un estilo que afecta a muchas páginas sólo tenemos que hacerlo en un lugar.</p>
+
+
+
+
+
+
+</div>
 
 
 
