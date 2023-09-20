@@ -54,9 +54,17 @@ padding: 22px;
 
  }
 
-#footer {
-  align-self: flex-end;
-}
+<<<<<<< HEAD
+
+=======
+ footer{
+   height: 20%;
+   margin: 20%;
+   
+ }
+
+
+>>>>>>> 11ff801acdca90dba4c8ab23aa6cb06e3a000956
  
  
  h2{
