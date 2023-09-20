@@ -14,10 +14,6 @@ body {
     padding-top: 40px;
  }
 
-
-
-
-
 h1 {
     text-align: center;
     padding:20px ;
@@ -90,4 +86,21 @@ img {
 p{
   padding: 30px;
   border-radius: 10px;
+}
+
+.nav_item {
+text-align: center;
+font-size: 16px;
+color: rgb(151, 149, 149);
+display:inline;
+border: 5px ridge black;
+border-radius: 10px;
+background-color: #0f0c29;
+text-decoration: none;
+
+}
+
+.nav_item:hover {
+  color: #7676be;
+  padding: 10px;
 }
