@@ -1,15 +1,43 @@
 body {
-   background-image:url(https://img.freepik.com/foto-gratis/collage-fondo-programacion_23-2149901789.jpg?w=2000);
-    color: rgb(255, 255, 255);
+   background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: rgb(255, 255, 255);
+    
 }
-
+#introduccionnn{
+display: grid;
+place-items: center;
+}
 
  #introduccion {
     padding: 15px;
     font-family: 'Bungee Spice', cursive;
     font-family: 'Rajdhani', sans-serif;
+    border: solid 10px rgb(58, 58, 126);
+    border-radius:20px ;
+    background-color:rgb(58, 58, 126) ;
+    width: 40%;
+    height: 150px;
+    position: relative;
+    top: 100px;
+    left: 10px;
  }
-
+ #introduccion:hover{
+   height: 250px;
+   
+ }
+#introduccion-2{
+   padding: 15px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius:20px ;
+    background-color:rgb(35, 35, 74) ;
+    width: 50%;
+    height: 300px;
+    position: relative;
+    left: 10px;
+}
  .carousel-item img{
    width:50%;
    height: 30%;
@@ -26,7 +54,11 @@ padding: 22px;
 
  }
 
-
+#footer {
+  align-self: flex-end;
+}
  
  
- 
+ h2{
+   text-align: center;
+ }
