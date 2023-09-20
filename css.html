@@ -23,7 +23,7 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown
+          SECCIONES
         </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="html.html">HTML</a></li>
@@ -101,6 +101,96 @@
     </pre>
 </section>
 </main>
+<div class="contenedor">
+<H1 style="color: beige;">declaraciones de css</H1>
+
+<img src="img/declaracion.png" id="imagen" class="border border-5">
+
+<p style="color: beige;"> indica que cambiaremos y se pone{}.
+  se compone de propiedades, aspecto del elemento que queremos modificar,
+  valor a poner, define de que manera modificarenos la propiedad
+</p>
+
+<h1  style="color: beige;">donde y como declarar los estilos</h1>
+
+<p  style="color: beige;">1- Enlazado en otro archivo. Es la opción más recomendable. Consiste en crear un archivo de texto plano, preferiblemente, con la extensión .css, y escribir dentro la hoja de estilo. Para enlazar este archivo desde la página web escribiremos una etiqueta link, por ejemplo:</p>
+<pre>
+  <code style="color: black;">
+    < link rel="stylesheet" href="mi_hoja.css" >
+  </code>
+</pre>
+<p  style="color: beige;">El atributo rel debe tener el valor stylesheet, el atributo type="text/css" es opcional desde la versión 5 de HTML. La etiqueta link va dentro de la etiqueta head.</p>
+
+<p  style="color: beige;">Podemos incluir un atributo media para que la hoja de estilo se aplique sólo bajo determinadas condiciones. En el siguiente ejemplo se enlazará la hoja de estilo sólo si la anchura del dispositivo es menor o igual a 800px.</p>
+
+<pre>
+  <code style="color: black;">
+    < link rel="stylesheet" media="(max-width: 800px)" href="mi_hoja.css" / >
+
+  </code>
+</pre>
+
+<p  style="color: beige;"> Definir la hoja de estilo en otro archivo tiene varias ventajas, por una parte tenemos el estilo CSS separado del código HTML y por otro lado podemos enlazar el mismo estilo desde muchas páginas web y para cambiar un estilo que afecta a muchas páginas sólo tenemos que hacerlo en un lugar.</p>
+
+<p style="color: beige;">2- Interno en la cabecera.
+
+  Mediante la etiqueta style podemos declarar un estilo dentro de la etiqueta head de un archivo HTML.
+  El atributo type="text/css" es opcional desde la versión HTML 5.
+
+Este sistema también mantiene el estilo CSS separado del código HTML, pero tiene el inconveniente que si tenemos que aplicarlo a más de un archivo HTML, deberemos repetirlo varias veces, y por lo tanto será más laborioso modificarlo.</p>
+
+<pre>
+  <code style="color: black;">
+    <head>
+      < style h2, p { color: red } < /style>
+    < / head >
+
+  </code>
+</pre>
+<p style="color: beige;">3- Dentro de la etiqueta.
+
+Podemos definir un estilo CSS dentro de una etiqueta HTML, el estilo sólo afectará a esa etiqueta, no actuará sobre otras etiquetas. No se puede definir una clase dentro de una etiqueta.
+
+Se escribe con el atributo style y las parejas de atributo: valor separadas por punto y coma, por ejemplo:</p>
+<pre>
+  <code style="color: black;">
+< div style="color: red; background-colo: white"> Ejemplo < /div>
+</code>
+</pre>
+<p style="color: beige;">Esta es la forma menos utilizada para definir estilos CSS ya que implica un acoplamiento máximo entre el estilo CSS y el código HTML, es decir, no mantiene el estilo CSS separado del código HTML. El inconveniente es que debemos escribir el estilo tantas veces como queramos que se aplique a cada etiqueta, y por lo tanto modificarlo sería muy laborioso. También haría aumentar el tamaño del archivo .html de forma innecesaria.</p>
+</div>
+
+<div style="color: beige;" class="pseudoselectores">
+  <h1>pseudoselectores</h1>
+  <p>son palabras claves que se le ponen a un selector para para especificar diferentes estados.
+    se activan dependiento del usuario
+  </p>
+
+  <pre>
+    <code style="color: black;">
+    elemento: hover {color : red}
+    selector  pseudo
+              selector
+  </code>
+  </pre>
+
+  <p>Hay diferentes tipos de pseudoselectores como:
+  </p>
+  <p>hover: cambia el color de la letra o se subraya la palabra o se resalta, (hay varias funciones) cuando pasas el mouse por arriba de elemento </p>
+
+  <img src="img/hover.gif" id="gif">
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 
