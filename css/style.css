@@ -5,6 +5,24 @@ body {
    color: rgb(255, 255, 255);
     
 }
+
+#navbar {
+   background-color: rgb(50, 5, 62) !important;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#secciones{
+   background-color: transparent  !important;
+}
+.dropdown-item:hover{
+   background-color: #69017c !important;
+}
+#contactanos_nav:hover{
+   border-bottom: 5px solid #5b2b63;
+   padding-bottom: 1px;
+   width: 6%;
+}
+
 #introduccionnn{
 display: grid;
 place-items: center;
@@ -31,7 +49,6 @@ margin: 100px;
  }
  #introduccion:hover{
    height: 250px;
-   
  }
 #introduccion-2{
    padding: 15px;
