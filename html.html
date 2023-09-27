@@ -10,32 +10,40 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
 </head>
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">introduccion a la programacion</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">introduccion</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              SECCIONES
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="html.html">HTML</a></li>
-              <li><a class="dropdown-item" href="css.html">CSS</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">JAVA SCRIPT</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar border-bottom border-body" data-bs-theme="dark" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">INTRODUCCION A LA PROGRAMACION</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">introduccion</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+           SECCIONES
+          </a>
+          <ul class="dropdown-menu" id="secciones">
+            <li><a class="dropdown-item" href="html.html">HTML</a></li>
+            <li><a class="dropdown-item" href="css.html">CSS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">JAVA SCRIPT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" id="contactanos_nav">
+          <a class="nav-link active" aria-current="page" href="#contact">contactanos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
   <nav class="seccion">
     <a class="nav_item" href="#historia-html">¿QUE ES HTML?</a>
     <a class="nav_item" href="#comenzar">COMIENZO</a>
@@ -182,6 +190,62 @@ contiene.<br>
        <p>Para abrir el inspector en una determinada web, podemos pulsar la tecla F12 o
         hacer clic derecho y seleccionar «Inspeccionar».</p>
     </div>
+    <div id="contact" class="formulario">
+      <h2> contactanos</h2>
+     <form method="post">
+      <label for="nombres"></label> <input class="controls" type="text" name="mi_texto" placeholder="nombre y apellido" id="nombres" required></label>
+      <label for="correo"></label> <input type="email" name="mi_correo" placeholder="e-mail" id="correo" required></label>
+      <label for="documento"></label> <input type="text" name="mi_dni" placeholder="numero de documento" id="documento" required></label>
+      <label for="edad"></label><input type="text" name="mi_edad" placeholder="ingrese su edad" id="edad" required>
+      <label for="telefono"></label> <input type="text" name="mi_telefono" placeholder="ingrese su telefono" id="telefono" required></label>
+      <button type="submit" id="enviar">enviar</button>
+     </form>
+    </div>
+
+    <footer class="bg-light text-dark pt-5 pb-4 mx-auto " id="footerr">
+      <div class="container text-center text-md-start" id="footer-1">
+          <div class="row text-center text-md-start">
+
+              <div class="col-md-3 col-ig-3 col-xl-3 mx-auto mt-3">
+               
+
+                 <h5 class="text-uppercase mb-4 font-weigth-bold text-primary text-center">nosotros</h5>
+                 <hr class="mb-4">
+
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam dignissimos in laborum officiis similique tenetur perspiciatis aut, ea beatae porro soluta eius cum explicabo, quaerat quibusdam, temporibus mollitia quisquam
+                  </p>
+                  
+              </div>
+
+          <div>
+
+          <div id="contacto-2" class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weigth-bold text-primary text-center">contacto</h5>
+              <hr class="mb-4">
+              <p>
+                  <li class="fas fa-home me-3 ">Argentina, BSAS La Plata</li>
+              </p>
+              <p>
+                  <li class="fas fa-envelope me-3">joaquinpichetto@gmail.com</li>
+              </p>
+              <p>
+                  <li class="fas fa-phone me-3">2211234567</li>
+              </p>
+          </div>
+
+          <div class="text-center mb-2">
+              <p>copyright todos los derechos reservados</p>
+          </div>
+
+          
+          
+          
+      </div>
+
+    </footer>
+
+
 
 
     <script src="js/script.js"></script>
