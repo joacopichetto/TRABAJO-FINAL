@@ -4,7 +4,22 @@ body {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    color: white;
 }
+#navbar {
+  background-color: rgb(50, 5, 62) !important;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+#secciones{
+  background-color: transparent  !important;
+}
+.dropdown-item:hover{
+  background-color: #69017c !important;
+}
+#contactanos_nav:hover{
+  border-bottom: 5px solid #5b2b63;
+  padding-bottom: 1px;
+  width: 6%;
+}
 #contacto {
     font-size: 10px;
 
@@ -103,4 +118,68 @@ text-decoration: none;
 .nav_item:hover {
   color: #7676be;
   padding: 10px;
+}
+
+#contact{
+  width: 300px;
+  padding: 25px;
+  margin:left;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 8px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+
+}
+
+#contact:hover {
+  transform: scale(1.1);
+}
+
+  
+#enviar {
+      width: 50%;
+     background-color: rgb(83, 30, 255); 
+     padding: 5px;
+     color: white;
+     margin: 20px;
+     margin-bottom: 10px;
+     
+
+      
+}
+
+input {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  
+  }
+
+  h2{
+    background-color: #746bcc;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #footerr{
+    color: black !important;
+    height: 20%;
+    margin: 20%;
+    align-self: flex-end;
+  }
+
+#footer-1{
+  color: black !important;
+  text-align: center;
+}
+
+
+#contacto-2{
+  font-size: 15px !important;
+ 
 }
