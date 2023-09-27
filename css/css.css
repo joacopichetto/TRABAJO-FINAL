@@ -7,6 +7,23 @@ body {
    font-family: 'Rajdhani', sans-serif;
 }
 
+
+
+#navbar {
+    background-color: rgb(50, 5, 62) !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 
+ #secciones{
+    background-color: transparent  !important;
+ }
+ .dropdown-item:hover{
+    background-color: #69017c !important;
+}
+
+
+
+
 h1{
     padding: 20px;
     text-align: center;
