@@ -129,4 +129,19 @@ main {
     margin: 0 auto;
 }
 
+.fuente{
+    padding: 20px ;
+    max-width: 800px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Cambiar el fondo de color de los paneles del acordeón */
+.accordion-item {
+    background-color: #ffcc00; /* Cambia este color al que desees */
+  }
+  
+  
+
 
