@@ -122,3 +122,142 @@ body {
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
+
+ #ends{
+   text-align: center;
+   border: #0f0c29;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 20px;
+   padding: 20px;
+   padding-bottom: 20px;
+ }
+
+ #title-end{
+   color: #df95ec;
+ }
+
+ #title-end:hover{
+   transform: scale(1.1);
+   color: #9c4898;
+   }
+
+#vinculando-js{
+   text-align: center;
+   border: #0f0c29;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 20px;
+   padding: 20px;
+   padding-bottom: 20px;
+}
+
+#otro-title{
+   color: #df95ec;
+   }
+
+#otro-title:hover{
+   transform: scale(1.1);
+   color: #9c4898;
+}
+
+#valores-js{
+padding: 20px;
+padding-bottom: 30px;
+border: #0f0c29;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#title-valores{
+   color: #df95ec;
+}
+
+
+#title-valores:hover{
+color: #9c4898;
+transform: scale(1.1);
+}
+
+.card {
+   display: inline-block;
+   padding-bottom: 20px;
+   padding-inline: 10px;
+   background-color: #5b2b63;
+   color: antiquewhite;
+   margin-bottom: 40px;
+   overflow: hidden;
+   height: 500px;
+}
+
+
+.card-body{
+   padding: 20px 15px;
+   text-align: justify;
+}
+
+
+.card:hover{
+   transform: scale(1.1);
+}
+
+
+@media(min-width:480px) {
+   
+   .card{
+      margin: 0;
+      display:-ms-flexbox;
+      flex-direction: column;
+   }
+   .card-header{
+      height: 250px;
+      overflow: hidden;
+   }
+   .card-body{
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+   }
+   .card-description{
+      flex-grow: 1;
+   }
+}
+
+#concatenacion-img:hover{
+   transform: scale(1.5);
+}
+
+#strings-principal{
+   text-align: center;
+   border-radius: 20px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   color: lightskyblue;
+   padding-bottom: 20px;
+   padding: 20px;
+}
+
+h3 {
+   color: yellow;
+}
+
+h3:hover{
+   transform: scale(1.5);
+}
+
+#pym-title{
+   color: cornflowerblue;
+}
+
+#variables{
+   text-align: center;
+   color: deepskyblue;
+}
+
+#footerr{
+   width: 100% !important;
+   
+}
+
+#btn-js2{
+   text-align: center;
+   padding: 20px;
+   display: block;
+   padding-left: 25px;
+}
