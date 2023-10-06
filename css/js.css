@@ -261,3 +261,82 @@ h3:hover{
    display: block;
    padding-left: 25px;
 }
+
+#coercion{
+   text-align: center;
+   color: rgb(255, 72, 0);
+}
+
+#img-parse-int{
+   border: 10px solid transparent;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 10px;
+   
+}
+
+#img-parse-int-2{
+   border: 10px solid transparent;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 10px;
+   
+}
+
+#if{
+   text-align: center;
+   color: blanchedalmond;
+}
+
+#if img{
+   border: 10px solid transparent;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 10px;
+}
+
+#tyf {
+   padding: 100px;
+   text-align: center;
+
+}
+
+#operadores h2{
+text-align: center;
+}
+
+#loops{
+   text-align: center;
+   background-color: #746bcc;
+   border-radius: 20px;
+
+}
+
+#loops h2{
+   color: #302b63;
+}
+
+#operadores-aritmeticos{
+text-align: center;
+background-color: #5f53cf;
+border-radius: 20px;
+color: rgb(240, 146, 165);
+}
+
+#operadores-aritmeticos img{
+   padding: 20px;
+}
+
+#variables-acumuladoras{
+   text-align: center;
+   background-color: #3723e6;
+   border-radius: 20px;
+}
+#variables-acumuladoras h2{
+   color: blanchedalmond;
+}
+
+#OM{
+   text-align: center;
+   border: 20px ;
+   border-radius: 20px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
