@@ -48,7 +48,7 @@
         </div>
       </nav>   
 
-      <div class="container">
+      <div class="container" id="coercion">
         <h1>COERCION</h1>
         <p>
             La Coerción de datos se refiere a la acción de forzar a que un dato se comporte como
@@ -64,7 +64,7 @@
             sea su cumpleaños, podríamos escribir:
         </p>
         <br>
-        <img src="img/parseInt.PNG" alt="">
+        <img src="img/parseInt.PNG" alt="" id="img-parse-int">
         <br>
         <p>Al hacer un parseInt de la Variable edad se hará la operación matemática en vez de una
             concatenación. <br>
@@ -72,7 +72,7 @@
             usuario, se concatenaría el number "1" al String "36". Mirá este ejemplo:
         </p>
         <br>
-        <img src="img/parseInt.PNG2.PNG" alt="">
+        <img src="img/parseInt.PNG2.PNG" alt="" id="img-parse-int-2">
         <br>
 
         <p>
@@ -81,7 +81,7 @@
         </p>
 
       </div>
-
+      <div class="container">
       <div class="card" style="width: 18rem;">
         <img src="img/numberss.PNG" class="card-img-top" alt="...">
         <div class="card-body">
@@ -141,9 +141,190 @@
           </p>
         </div>
       </div>
+      </div>
+      <div class="container" id="if">
+        <h1>SENTENCIA IF</h1>
+          <p>se usa, principalmente, para tomar decisiones. Permite que, si la
+            condición es verdadera (true), se ejecute un código.</p>
+            <img src="img/if.PNG" alt="">
+            <p>Sin embargo, la Función Condicional más común es if... else. Con esta, nos aseguramos
+              que, cuando una condición se cumple (es igual a true), retornemos una cosa. Sino (si es
+              false), retornemos otra.
+              Sintaxis De La Función if...else:</p>
+              <img src="img/else.PNG" alt="">
+            <p>
+              Veamos un ejemplo. Si hiciéramos una app para evaluar a las personas que llegan a una
+              guardia en un hospital, podríamos escribir el siguiente código que organice la atención de
+              los pacientes en función de su urgencia:
+            </p>
+            <img src="img/ej-else.PNG" alt="">
+            <p>
+              El código se lee y ejecuta de arriba para abajo. Por lo tanto, el orden es muy importante a
+              la hora de codear, tanto a la hora de declarar Variables como de generar las Estructuras
+              Condicionales.
+              Las Estructuras Condicionales de tipo if...else pueden anidarse, unas dentro de otras,
+              para:
+              Generar múltiples bifurcaciones en función del objetivo del proyecto.
+              Mostrar un único camino lógico a cada usuario.
+            </p>
+            <img src="img/ej-if-else.PNG" alt="">
+      </div>
 
+      <div class="container" id="tyf">
+        <h4>¿QUE TIPOS DE DATOS SON TRUE Y FALSE?</h4>
+          <p>
+            true y false son datos de tipo booleano. Es lo que
+            resulta de la comparación entre una condición y un
+            input. Básicamente, determina si se cumple (o no)
+            la condición para activar (o desactivar) cierta parte
+            del programa.
+          </p>
+      </div>
       
-      
+      <div class="container" id="operadores">
+        <h2>Operadores De Comparación En JavaScript</h2>
+        <p>
+            ... < ... : Indica que la condición de la izquierda es menor que la de la derecha. <br>
+            ... > ... : Indica que la condición de la izquierda es mayor que la de la derecha. <br>
+            ... >= ... : Indica que la condición de la izquierda es mayor o igual que la de la derecha. <br>
+            ... <= ... : Indica que la condición de la izquierda es menor o igual que la de la derecha. <br>
+            ... == ...: Hace una comparación blanda entre dos valores. Es decir, JavaScript hace una
+            coerción de datos, para que ambos sean del mismo tipo y pueda compararlos. <br>
+            ...===... : Indica que la condición de la izquierda tiene una igualdad estricta respecto a la
+            de la derecha. Es decir, evalúa que el contenido y el tipo de dato sea el mismo. Al usar
+            este comparador evitarás bugs a futuro. <br>
+            ... != ... : Este operador, llamado "diferente de..." o "de desigualdad", permite comparar un
+            valor con 2, o más, condiciones. Para que la estructura dé como resultado true, todas las
+            condiciones deben ser diferentes entre sí. Basta con que 1 de las condiciones no sea
+            diferente para que toda la estructura sea false . <br>
+        </p>
+        <p>
+          Hay otros operadores en JS que te permitirán armar programas más complejos: los
+          operadores lógicos y los de desigualdad.
+          or, and, not
+          En síntesis, todos los operadores lógicos y de desigualdad retornarán valores booleanos.
+          La ventaja de usarlos es que permiten agrupar muchas condiciones y refactorizar el
+          código, haciéndolo más rápido, legible y eficiente.
+        </p>
+        <p>
+          ... || ... : Este operador, llamado "o", permite comparar un valor con 2, o más, condiciones.
+          Para que la estructura dé como resultado true, alcanza con que solo 1 de ellas se cumpla.
+          Si ninguna condición es true, la estructura será false. <br>
+          ... && ... : Este operador, llamado "y", permite comparar un valor con 2, o más,
+          condiciones. Para que la estructura dé como resultado true, todas las condiciones deben
+          cumplirse. Basta con que 1 de las condiciones no se cumpla para que toda la estructura
+          sea false . <br>
+          ! niega el valor booleano de cada dato. Es decir que, si es true devolverá false y si es
+          false, retornará true. <br>
+        </p>
+
+        <p>
+          Los datos de JavaScript tienen una naturaleza intrínseca asociada a lo positivo o
+          negativo. Por ejemplo, el número 0, al indicar ausencia de algo, tiene una naturaleza
+          negativa. En cambio, el número 1, al indicar presencia, tiene una naturaleza positiva.
+          De la misma manera sucede con los Strings: uno vacío tendrá una naturaleza negativa
+          mientras que uno lleno tendrá una positiva.
+        </p>
+      </div>
+
+
+      <div class="container" id="loops">
+        <h2>LOOPS</h2>
+        <p>Los Loops (en castellano, Bucles) son muy útiles. Sirven para repetir una tarea, una
+          determinada cantidad de veces, hasta que se cumpla una condición dada de antemano.</p>
+        <h2>WHILE</h2>
+        <p>el while Loop se parece a la declaración del if...else ya que ambos evalúan una condición
+          y ejecutan un bloque de código.
+          Sin embargo, el while Loop lo re-evalúa repetidas veces y ejecuta su bloque de código
+          hasta que la condición deja de ser verdadera.
+        </p>
+        <img src="img/while.PNG" alt="">
+        <img src="img/while2.PNG" alt="">
+        <p>
+          Con este código, podríamos cobrar el boleto a cada una de las 20 personas que estén en
+          la fila, dejando pasar a quienes paguen, desde el primero hasta el último pasajero.
+        </p>
+        <h2>LOOPS INFINITOS</h2>
+        <p>
+          Los Loops Infinitos ocurren cuando la condición de un while Loop nunca es falsa. Por lo
+          tanto, el código corre indefinidamente y se cuelga el programa.
+        </p>
+        <img src="img/loops-infinitos.PNG" alt="">
+        <p>
+          En este código, x es igual a 0 y la condicional dice: "Mientras x sea menor que 10 se debe
+          mostrar por consola a x".
+        </p>
+      </div>
+
+      <div class="container" id="operadores-aritmeticos">
+        <h2>OPERADORES ARITMETICOS AVANZADOS</h2>
+        <p>
+          Los Operadores Aritméticos Avanzados de JavaScript nos permiten escribir un código más
+          preciso y con una mejor funcionalidad. <br>
+          ++: Le suma 1 unidad a la Variable. <br>
+          --: Le resta 1 unidad a la Variable. <br>
+          +=: Le suma las unidades que querramos a la Variable. <br>
+          -=: Le resta las unidades que queramos a la Variable. <br>
+          *=: Multiplica a la Variable por la unidad que queramos. <br>
+        </p>
+        <h2>while Loop Con Cadenas De Caracteres(Strings)</h2>
+        <p>
+          En los while Loop también podemos evaluar condiciones usando cadenas de caracteres
+          (en inglés Strings).
+          Los while Loop también pueden evaluar condiciones que sean Strings. Por ejemplo, si
+          quisiéramos corroborar cuál es la palabra mágica para entrar a La Caverna De Los 40
+          Ladrones, podríamos escribir estas líneas de código:
+        </p>
+        <img src="img/stringss.PNG" alt="">
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <div class="container" id="variables-acumuladoras">
+        <h2>VARIABLES ACUMULADORAS</h2>
+        <p>
+          En este ejemplo vemos un loop que tiene 5 iteraciones, ya que arranca desde el 1 y
+          termina en el 5. La variable acumuladora va a juntar el valor de la i en cada iteración.
+          La cuenta acumulador += i se puede escribir también como acumulador = acumulador + i.
+          Es importante analizar que pasa en cada iteración:
+        </p>
+        <img src="img/acumuladores.PNG" alt="">
+
+        <h2>WHILE LOOPS ANIDADOS</h2>
+        <p>Para iniciar al entendimiento de los loops anidados te recomendamos que copies este
+          código en tu consola y analices el resultado:</p>
+          <img src="img/wyl.anidados.PNG" alt="">
+          
+        <p>consola 1:</p>
+        <img src="img/consola.PNG" alt="">
+        <p>
+          Como podrás observar, el primer while se
+          mantiene en la iteración número 1 mientras que
+          el while interno se recorre (a la izquierda esta la i
+          y a la derecha esta la j):
+        </p>
+        <p>consola 2:</p>
+        <img src="img/consola2.PNG" alt="">
+        <p>Una vez que termina el while interno de hacer
+          su recorrido, pasamos a la segunda vuelta del
+          primer while, en donde la i va a valer 2,
+          entonces:</p>
+
+        <p>consola 3:</p>
+        <img src="img/consola3.PNG" alt="">
+         <p>Y así, hasta que termine la última iteración del
+          while principal, es decir, en la iteración 5,
+          veamos como sigue hasta el final:</p>
+      </div>
+
+      <div class="container" id="OM">
+        <h3>OBJETO MATH </h3>
+        <p>
+          El Objeto Math contiene Propiedades y Métodos relacionados a Matemática. Un gran uso del
+          mismo es crear números random.
+        </p>
+      </div>
 
     <div id="contact" class="formulario">
         <h2 id="titulo-form"> contactanos</h2>
