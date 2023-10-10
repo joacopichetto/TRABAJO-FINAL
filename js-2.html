@@ -491,7 +491,7 @@
                 </section>
 
                 <h4>Ejemplo</h4>
-                <pre>
+                <pre class="pre-1">
                   <code>
                     // Función para cambiar el texto del párrafo
         function cambiarTexto() {
@@ -503,6 +503,7 @@
         }
                   </code>
                 </pre>
+
 
                 <h3>Como manipular el estilo</h3>
 
@@ -517,7 +518,7 @@
                 valor.</p>
 
                 <h4>Ejemplo</h4>
-                <pre>
+                <pre class="pre-2">
                   <code>
                     function cambiarColorFondo() {
                       // Obtiene el elemento de párrafo por su ID
@@ -529,10 +530,71 @@
                   
                   </code>
                 </pre>
+                 
+                <h3>Como manipular el texto y contenido</h3>
 
+                <p>Además de manipular los estilos, podemos manipular los textos del HTML. Para eso,
+                  usaremos las Propiedades textContent (del inglés “contenido de texto”) y innerHTML.</p>
+
+                  <div class="alert alert-light" role="alert">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bibi-archive" viewBox="0 0 16 16">
+                      <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                    </svg>Importante: La propiedad textContent es para todos los elementos o tags HTML que
+                  muestren texto (h1,  span, p).
+                </div>
+                
+                <p>Veamos un ejemplo. Si quisiéramos modificar el texto presente en h1 ("primer h1!"),
+                   primero definimos la Variable y luego utilizamos textContent:</p>
+
+                   <pre class="pre-3">
+                    <code>
+  let h1 = document.querySelector("h1")
+  h1.textContent = "¡Hola!"
+                    </code>
+                   </pre>
+
+
+
+
+                   <h3>Manipular los atributos de un elemento</h3>
+
+                   <p>El método getAttribute() nos devuelve el valor del atributo especificado. Con el método
+                    setAttribute() definiremos un valor para el atributo.</p>
+                    <p>Supongamos que tenemos el siguiente tag:
+                      < a href="https://github.com/" id="btn-google">Ir a Google< /a>
+                      Por ahora el link nos lleva a “https://github.com/”, pero queremos modificarlo por
+                      “https://getbootstrap.com/”. Para hacerlo, primero debemos usar el método querySelector desde
+                      JavaScript: </p>
+
+                      <pre class="pre-4">
+                      <code>
+  let botonGoogle = document.querySelector("#btn-google");
+ 
+   botonGoogle.getAttribute("href") // Nos muestra cuál es el valor del atributo href.
+   botonGoogle.setAttribute("href", "https://getbootstrap.com/") // Cambia el valor del
+   atributo href por el valor que se pasa como segundo Parámetro.
             
-           
-            
+                    </code>
+                     
+                    </pre>
+
+                   <h3>manipular muchos elementos</h3>
+                    <p>Para seleccionar varios elementos al mismo tiempo, existe el método querySelectorAll()
+                    querySelectorAll() devuelve un Node list (lista de nodos) de todos los elementos que
+                    coincidan con el selector.
+                    Si utilizamos querySelector("a"), solamente nos trae el primer link
+                    
+                    En cambio, querySelectorAll("a") nos devuelve una lista de nodos con todos los elementos de este tipo
+                    
+                  </p>
+                  <p>
+                    Tambien se puede agregar y remover los elementos.
+                    Para agregar un elemento dentro de otro usaremos el método appendChild. De esta
+                    forma, podemos incluir en un nodo un nuevo hijo.
+                    Y para remover un elemento de nuestro sitio web, usamos el método removeChild.
+
+                  </p>
 
 
        
@@ -612,6 +674,7 @@
 
       </footer>
 
+      
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
