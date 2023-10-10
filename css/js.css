@@ -506,3 +506,51 @@ padding: 45px 0px;
 #alcance h1{
    color: #09f;
 }
+#dom{
+   text-align: center;
+   padding: 20px;
+   background-color: #5f53cf;
+   border-radius: 15px;
+ }
+
+
+ #dom img{
+   padding: 10px;
+   width: 30%;
+   
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+   
+ }
+ #dom h1 {
+   color: red;
+ }
+
+ #dom p{
+   padding: 20px;
+   font-weight: bold;
+   color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+   margin-top: 20px;
+}
+
+section{
+   background-color: #3498db;
+   border-radius: 15px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+pre{
+   text-align: left;
+   background-color: #000;
+   color: #b81ed3;
+}
+
+h4{
+   color: #00ddff;
+   text-decoration: underline #000;
+}

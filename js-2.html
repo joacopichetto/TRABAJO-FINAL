@@ -451,6 +451,95 @@
         </p>
       </div>
 
+      <div class="container" id="dom">
+        <h1>manipulacion de DOM</h1>
+
+        <h3>¿que es el dom?</h3>
+        <p>El browser construye una representación del documento HTML que se llama Document Object Model (DOM).
+          En este sentido, el DOM lo organiza en forma de nodos y Objetos que tienen Propiedades y métodos. Tendrá la siguiente forma:</p>
+
+
+          <img src="img/Andujar.jpg" alt="Maraiano">
+
+          <p>Esencialmente conecta las páginas web a los scripts o lenguajes de programación. Es decir, el DOM representa todo el contenido del documento HTML y permite que el script de JavaScript interactúe con él. Cuando buscamos un término en el campo de búsqueda de Google y se despliegan las opciones de búsqueda más frecuentes, esto sucede gracias a la interacción del código JavaScript con nuestro documento HTML (representado por Objetos) a través del DOM.</p>
+          <h3>¿Como se manipula?</h3>
+
+          <p>Como vimos, el DOM es la interfaz entre JavaScript y HTML+CSS.
+            Es decir, cuando cargamos un documento HTML+CSS en el browser, el DOM convierte
+            cada tag en un Objeto de JavaScript. Esto permite que el script manipule los elementos
+            HTML+CSS como si fueran Objetos.</p>
+
+            <h3>¿Cómo accedemos al objeto de JavaScript?</h3>
+            <p>si escribimos el codigo: document.
+               Nos va a mostrar el código HTML. Sin embargo, esto no muestra el verdadero Objeto.
+              Para acceder, deberíamos escribir:
+              console.dir(document)
+              Dentro de este Objeto podemos encontrar una gran cantidad de Propiedades y métodos.</p>
+
+              <h3>Como manipular los elementos</h3>
+
+              <p>Podemos seleccionar los elementos HTML desde la consola y, luego, acceder a sus
+                 Propiedades para modificar sus valores a través del comando querySelector.
+                 Para seleccionar un elemento desde la consola (o desde el script), debemos escribir
+                 document.querySelector()</p>
+
+                <section>
+                 <p >document.querySelector(): Es uno de los métodos para seleccionar un elemento.
+                  Devuelve solo el primer elemento que coincida con el selector CSS dado. El término
+                  “Query Selector” viene del inglés “consulta por selector”.</p> 
+                
+                </section>
+
+                <h4>Ejemplo</h4>
+                <pre>
+                  <code>
+                    // Función para cambiar el texto del párrafo
+        function cambiarTexto() {
+            // Obtener el elemento del párrafo por su ID
+            var parrafo = document.getElementById("miParrafo");
+            
+            // Cambiar el texto del párrafo
+            parrafo.textContent = "¡El texto ha sido cambiado!";
+        }
+                  </code>
+                </pre>
+
+                <h3>Como manipular el estilo</h3>
+
+
+              <p>Si quisiéramos modificar las Propiedades de un documento, podríamos seleccionar un
+                elemento con un querySelector y, luego, modificar su estilo. Sin embargo, esto es poco
+                escalable.
+                
+                La alternativa más práctica es definir una Clase con todas las propiedades CSS y aplicarla
+                usando JavaScript. Para eso, usaremos una propiedad llamada classList, en la que
+                seleccionamos un elemento y le agregamos una Clase determinada pasándola como
+                valor.</p>
+
+                <h4>Ejemplo</h4>
+                <pre>
+                  <code>
+                    function cambiarColorFondo() {
+                      // Obtiene el elemento de párrafo por su ID
+                      var parrafo = document.getElementById("miParrafo");
+                  
+                      // Cambia el color de fondo del párrafo
+                      parrafo.style.backgroundColor = "red"; // Puedes usar cualquier color 
+                  }
+                  
+                  </code>
+                </pre>
+
+            
+           
+            
+
+
+       
+
+
+      </div>
+
     <div id="contact" class="formulario">
         <h2 id="titulo-form"> contactanos</h2>
        <form method="post">
