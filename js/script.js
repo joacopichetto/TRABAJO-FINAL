@@ -28,6 +28,16 @@ let comisionBancaria = 0.05;
 (dineroEnLaCuenta+nuevoDeposito)* comisionBancaria
 
 
+
+
+
+
+const myCollapsible = document.getElementById('myCollapsible')
+myCollapsible.addEventListener('hidden.bs.collapse', event => {
+  // do something...
+})
+
+
 "Mi nombre es "+ nombre + " , tengo" + edad + " y estoy cursando en el" + stage + "."
 
 

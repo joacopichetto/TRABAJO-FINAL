@@ -585,3 +585,58 @@ h4{
    width: 70%;
    
 }
+
+#eventos h1{
+   text-decoration: underline cornflowerblue;
+   color: #3723e6;
+}
+
+
+#eventos pre{
+   margin: 0 auto;
+   
+   text-align: left;
+   background-color: #000;
+   color: #00ddff;
+   width: 55%;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+}
+
+
+#eventos{
+   padding: 20px;
+   text-align: center;
+   border: #000 10px solid;
+
+}
+
+#eventos img{
+   width: 50%;
+   border: #09f 4px solid;
+   border-radius: 15px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+
+.button{
+   padding: 20px;
+   background-color: blue ;
+   border-radius: 20px;
+
+}
+
+#eventos .card-body{
+   height: 50%;
+}
+
+#eventos button{
+   background-color: green;
+   border: #00ddff 2px solid;
+}
+
+
+
+
+
+

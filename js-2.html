@@ -429,7 +429,7 @@
        
       </div>
 
-      <div class="container" id="alcance">
+    <div class="container" id="alcance">
         <h1>EL ALCANCE DE LA VARIABLE EN JAVASCRIPT</h1>
         <p>
           El alcance (en inglés scope) de una Variable indica cuán disponible estará cuando se la
@@ -596,11 +596,167 @@
 
                   </p>
 
+         </div>
 
-       
+
+         <div class="container" id="eventos">
+          
+          <h1>Eventos</h1>
+
+          <h3>que es un evento</h3>
+
+          <p>
+            Los Eventos son acciones que activan los cambios que realiza JavaScript en los sitios
+            dinámicos. Gracias a esto, el DOM va a "escuchar" (listen) qué hace el usuario y activar
+            cierta parte del código, en base a cierto estímulo.
+            Vamos a usar el método eventListener (del inglés “escuchar el Evento”).
+            Para agregar un Evento, usamos addEventListener().
+          </p>
+          <pre>
+            <code>
+              function funcion_boton(){
+                console.log("¡Alguien hizo click en el boton!")
+                }
+
+                document.querySelector("button").addEventListener("click", funcion_boton)
+            </code>
+          </pre>
+              
+         <p> En este ejemplo, el primer argumento del método addEventListener() es un String ("click")
+             que indica el tipo de Evento que se estará "escuchando". El segundo argumento es una
+             Función denominada callback. Es una Función que no corre inmediatamente, sino que depende de otra cosa (el Evento del clickdel usuario).
+            </p>
+
+            <h3>Tipos de eventos</h3>
+
+            <p>Existen muchos Eventos distintos en JavaScript. Por ejemplo, los de Animación, los de
+              Llamada, los de Formulario, etc.</p>
+
+              <img src="img/eventos.jpg" alt="">
+              
+              <p>Podemos agregar Eventos a varios elementos al mismo tiempo a través de la palabra
+                reservada this.</p>
 
 
-      </div>
+                <h3>Eventos: mouseover Y mouseleave</h3>
+
+                <p>mouseover: Se activa cuando el mouse se pone sobre el elemento o alguno de sus descendientes.
+                  mouseleave: Se activa cuando el mouse sale del elemento (y sus descendientes).</p>
+                  <p>Si quisiéramos que el fondo cambiara a amarillo cada vez que el cursor se pose sobre el elemento (y se desactive cuando ya no está posicionado), podríamos usar mouseover y
+                    mouseleave:</p>
+
+                  <pre>
+                    <code>
+< p id="target">¡Hola!< /p>
+
+.highlight {
+background-color: yellow
+}
+let target = document.querySelector("#target")
+target.addEventListener("mouseover", function(){
+this.classList.add("highlight")
+})
+target.addEventListener("mouseleave", function(){
+this.classList.remove("highlight")
+})
+                    </code>
+                  </pre>
+
+                  <h3>Agrumentos de un evento</h3>
+
+                  <p>Cada vez que se dispara un Evento, el browser genera un Objeto JavaScript con
+                    información muy valiosa que recaba un eventListener: qué tipo de Evento fue, a qué hora
+                    se generó, en qué posición estaba el mouse, si el usuario hizo click, etc.
+                    
+                    Para poder acceder a él, debemos pasarle como argumento una Función Anónima que
+                    luego podamos loguear en la consola. Incluso, podemos acceder al valor de cualquiera de
+                    las Propiedades guardadas en él para, por ejemplo, reutilizarlo.
+                    para acceder a este Objeto JavaScript, debemos capturarlo como argumento dentro de la
+                    Función callback y para acceder a la información del Evento, usá Dot notation (como con cualquier Objeto).
+                  </p>
+                <div class="button">
+                  <h3>Propiedad .button</h3>
+
+                  <p>Indica si algún botón del mouse está siendo clickeado o no cuando
+                    ocurrió el Evento. En caso afirmativo, dará 1; sino, 0.
+                    
+                    Aplicado esto al ejemplo anterior, podríamos escribir el siguiente código:
+                    
+                    </p>
+                  <pre id="pre-5">
+                    <code>
+  document.body.addEventListener("mousemove", function(infoEvento) {
+  console.log("El mouse está en X: " + infoEvento.clientX + " Y: " +
+  infoEvento.clientY)
+  console.log("Está siendo clickeado:" + infoEvento.button)
+  })
+                    </code>
+                  </pre>
+
+
+                </div>
+
+
+                <h3>Eventos disparado por teclado</h3>
+
+                <p>Podemos hacer que se activen ciertas acciones a partir de una tecla presionada. Por
+                  ejemplo, podés asociar una tecla a un sonido o imagen. Esto sirve para lograr una mayor
+                  interacción con el usuario.</p>
+              
+                  <p class="d-inline-flex gap-1">
+                    
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3" >los eventos son:</button>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                          se produce al presionar cualquier tecla. Por ejemplo, si
+                          presionamos la tecla "Shift" y la tecla "a" al mismo tiempo, se producen dos Eventos.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          El Evento keyup se produce al soltar la tecla presionada. Es decir, cada tecla presionada
+                          (y soltada) disparará un nuevo Evento.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                          El Evento keypress también se produce al presionar una tecla. A diferencia del Evento
+                          keydown, si presionamos
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </div>
 
     <div id="contact" class="formulario">
         <h2 id="titulo-form"> contactanos</h2>
