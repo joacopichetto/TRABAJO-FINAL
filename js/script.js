@@ -177,3 +177,104 @@ i++;
 3 - 4
 3 - 5
 
+function nombreEnCamelCase() {
+    // Los paréntesis deben quedar vacíos y,
+    luego,
+    // se abre una llave para alojar las
+    instrucciones.
+    console.log("¡Soy una Función!") // Bloque
+    de código que se ejecutará luego.
+    } // Se cierra la llave.
+
+    console.log("Que los cumplas feliz.")
+    console.log("Que los cumplas feliz.")
+    console.log("Que los cumplas, Julieta.")
+    console.log("Que los cumplas feliz.")
+
+    function cantarCumple (){
+        console.log("Que los cumplas feliz.")
+        console.log("Que los cumplas feliz.")
+        console.log("Que los cumplas, Julieta.")
+        console.log("Que los cumplas feliz.")
+        }
+        //Ahora, ejecuto la Función cuantas veces
+        necesite:
+        cantarCumple()
+        cantarCumple()
+        cantarCumple()
+
+        function cantarCumpleA(nombre) { // Cuando
+            declaramos la Función, entre los paréntesis,
+            definimos el nombre del Parámetro. En este caso:
+            nombre.
+            console.log("¡Que los cumplas feliz!")
+            console.log("¡Que los cumplas feliz!")
+            console.log("¡Que los cumplas " + nombre +
+            "!")
+            console.log("¡Que los cumplas feliz!")
+            }
+            cantarCumpleA("Claudia")
+            cantarCumpleA("Elon")
+            cantarCumpleA("Jeff")
+
+            function areaCuadrado(lado) {
+                console.log(lado * lado)
+                }
+                areaCuadrado(3)
+                areaCuadrado(10)
+                areaCuadrado(4)
+
+ function areaTriangulo(base, altura) {
+   console.log(base * altura / 2)
+    }
+
+    saludarTres(“lucio”, “fer”)
+
+    saludarTres("Ron", "Harry", "Hermione", "Hagrid", "Dumbledore", "Snape", "Severus")
+
+    
+    
+    
+    
+    function multiply(a, b = 1) {
+        console.log (a * b);
+        }
+        multiply(5, 2);
+        multiply(5);
+
+
+        function cuadrado(numero) {
+            console.log(numero * numero)
+            }
+            cuadrado(4)
+            > 16
+            console.log("El resultado de 4 al cuadrado es: " + cuadrado(4))
+            > 16
+            > El resultado de 4 al cuadrado es: undefined
+            undefined
+
+
+            function cuadrado(numero) {
+                return (numero * numero)
+                }
+                console.log("El resultado de 4 al cuadrado es: " + cuadrado(4))
+
+
+
+
+                let nombre = "Juan" // nombre es una Variable Global
+                function saludar() {
+                let apellido = "Lopez" // apellido es una Variable Local
+                console.log("Hola, " + nombre + " " + apellido)
+                }
+                saludar()
+                
+                
+                let nombre = "Juan" // nombre es una Variable Global.
+                let apellido = "Lopez" // apellido ahora es una Variable Global.
+                function despedir() {
+                console.log("Chau, " + nombre + " " + apellido)
+                }
+                despedir()
+
+                
