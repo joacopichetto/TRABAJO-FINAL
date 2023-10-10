@@ -224,4 +224,57 @@ function nombreEnCamelCase() {
                 areaCuadrado(10)
                 areaCuadrado(4)
 
+ function areaTriangulo(base, altura) {
+   console.log(base * altura / 2)
+    }
+
+    saludarTres(“lucio”, “fer”)
+
+    saludarTres("Ron", "Harry", "Hermione", "Hagrid", "Dumbledore", "Snape", "Severus")
+
+    
+    
+    
+    
+    function multiply(a, b = 1) {
+        console.log (a * b);
+        }
+        multiply(5, 2);
+        multiply(5);
+
+
+        function cuadrado(numero) {
+            console.log(numero * numero)
+            }
+            cuadrado(4)
+            > 16
+            console.log("El resultado de 4 al cuadrado es: " + cuadrado(4))
+            > 16
+            > El resultado de 4 al cuadrado es: undefined
+            undefined
+
+
+            function cuadrado(numero) {
+                return (numero * numero)
+                }
+                console.log("El resultado de 4 al cuadrado es: " + cuadrado(4))
+
+
+
+
+                let nombre = "Juan" // nombre es una Variable Global
+                function saludar() {
+                let apellido = "Lopez" // apellido es una Variable Local
+                console.log("Hola, " + nombre + " " + apellido)
+                }
+                saludar()
+                
+                
+                let nombre = "Juan" // nombre es una Variable Global.
+                let apellido = "Lopez" // apellido ahora es una Variable Global.
+                function despedir() {
+                console.log("Chau, " + nombre + " " + apellido)
+                }
+                despedir()
+
                 

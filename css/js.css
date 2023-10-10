@@ -423,6 +423,25 @@ color: rgb(240, 146, 165);
 
 }
 
+#parametros{
+   text-align: center;
+   color: whitesmoke;
+}
+
+
+#parametros h1{
+   color: blue;
+}
+
+#parametros img{
+   border: 15px;
+   border-radius: 15px;
+   box-shadow: rgba(5, 26, 216, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+
 .pie-pagina{
 width: 100%;
 background-color: #fff;
@@ -478,3 +497,12 @@ padding: 45px 0px;
 
 }
 
+
+#alcance{
+   text-align: center;
+
+}
+
+#alcance h1{
+   color: #09f;
+}

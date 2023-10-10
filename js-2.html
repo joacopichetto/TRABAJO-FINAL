@@ -351,17 +351,17 @@
               Para ejecutar una Función, primero hay que declararla. En este proceso, se escribe el
               bloque de código que se guardará para, luego, ejecutar.
             </p>
-            <img src="img/declarar-funciones.PNG" alt="">
+            <img src="img/declarar-funciones.PNG "  class="rounded-top">
             <h4>EJEMPLO</h4>
             <p>
               Imaginá que querés mostrar por consola el Feliz Cumpleaños. Podrías hacerlo de esta
               manera: <br>
 
-              <img src="img/ej-funcion.PNG" alt=""> <br>
+              <img src="img/ej-funcion.PNG" class="rounded-top"> <br>
               Ahora, si quisieras volver a mostrarlo, tendrías que escribir ese código nuevamente. En
               cambio, con una Función, solo tendrías que escribir el código una vez y ejecutarlo cuantas
               veces lo necesites: <br>
-              <img src="img/ej-funcion-2.PNG" alt=""> <br>
+              <img src="img/ej-funcion-2.PNG" class="rounded-top"> <br>
               Muchos comandos que venís usando son, en realidad, Funciones que engloban código
               nativo de JS. <br>
               alert()  <br>
@@ -371,7 +371,7 @@
             
       </div>
       
-      <div class="container">
+      <div class="container " id="parametros">
         <h1>¿QUE ES UN PARAMETRO?</h1>
         <p>
           Un Parámetro es una Variable que creamos al momento de definir una Función y, cada
@@ -388,9 +388,66 @@
           (como cantarCumpleClaudia, o cantarCumpleElon, etc.), optimizaríamos el código de esta
           manera: <br>
           <br>
-          <img src="img/parametros.PNG" alt=""> <br>
+          <img src="img/parametros.PNG" class="rounded-top"> <br>
           Veamos otro ejemplo de una Función que utiliza Parámetros: <br>
-          <img src="img/parametros-2.PNG" alt="">
+          <img src="img/parametros-2.PNG" class="rounded-top">
+        </p>
+
+        <h3>Funciones Con Múltiples Parámetros</h3>
+        <p>
+          Podemos ejecutar las Funciones pasándoles todos los Parámetros que necesitemos.
+          Sintaxis De Las Funciones Con Múltiples Parámetros:
+          Debemos separar los Parámetros con una coma. Mirá este ejemplo: <br>
+          <img src="img/parametros3.PNG" alt=""> <br>
+          ¿Qué sucede si dejamos un Parámetro sin definir? Probá este ejemplo en tu consola: <br>
+          <img src="img/parametros4.PNG" alt=""> <br>
+          ¿Y si le pasamos Argumentos de más? Comprobá qué sucede en tu consola: <br>
+          <img src="img/parametros5.PNG" alt=""> <br>
+        </p>
+
+        <h3>PARAMETROS POR DEFAULT</h3>
+        <p>
+          Los Parámetros Por Default permiten que los Parámetros de una Función sean definidos
+          con un valor inicial. <br>
+          <img src="img/parametros-default.PNG" alt=""> <br>
+        </p>
+        <h3>KEYWORD RETURN</h3>
+        <p>
+          La keyword return se usa al declarar una Función para devolver un valor específico de
+          ella. Esto sucede para guardar ese valor en una Variable o usarlo por fuera del bloque de
+          definición de la Función. <br>
+          <h5>EJEMPLO SIN RETURN</h5>
+          <img src="img/keyword.PNG" alt=""> <br>
+          En este código, el resultado de la operación se muestra por consola. Sin embargo, al no
+          usar return ese valor no puede reutilizarse y, por lo tanto, se imprime undefined. <br>
+          <h5>EJEMPLO CON RETURN</h5>
+          <img src="img/keyword2.PNG" alt=""> <br>
+          Con el keyword return tomamos el resultado de la operación para, luego, reutilizarlo y
+          lograr que la Función nos devuelva el valor del cuadrado de un número. <br>
+
+        </p>
+       
+      </div>
+
+      <div class="container" id="alcance">
+        <h1>EL ALCANCE DE LA VARIABLE EN JAVASCRIPT</h1>
+        <p>
+          El alcance (en inglés scope) de una Variable indica cuán disponible estará cuando se la
+          invoque. Las Variables Globales son aquellas que están accesibles en todo el bloque de
+          código de un programa.
+          En cambio, las Variables Locales son accesibles solo en el ámbito de la Función donde
+          fueron declaradas. <br>
+
+          <img src="img/anashe.PNG" alt=""><br>
+
+          Cuando ejecutemos la Función saludar, la consola nos devolverá como resultado los valores
+          guardados tanto en la Variable nombre como apellido. Esto sucede porque la Variable nombre es
+          Global y apellido es Local dentro de la Función que estamos ejecutando.
+          Sin embargo, en caso de que quisiéramos seguir avanzando en nuestro código para crear una Función
+          despedir, que reutilice ambos valores, la consola nos devolverá un error porque la Variable apellido
+          no está definida dentro de la Función despedir: <br>
+           <img src="img/anashe2.PNG" alt=""> <br>
+           <br>
         </p>
       </div>
 
