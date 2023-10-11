@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/f7406f0e9d.js" crossorigin="anonymous"></script>
+<script src="https://formspree.io/f/mvojdkzl.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -429,7 +429,7 @@
        
       </div>
 
-      <div class="container" id="alcance">
+    <div class="container" id="alcance">
         <h1>EL ALCANCE DE LA VARIABLE EN JAVASCRIPT</h1>
         <p>
           El alcance (en inglés scope) de una Variable indica cuán disponible estará cuando se la
@@ -450,6 +450,313 @@
            <br>
         </p>
       </div>
+
+      <div class="container" id="dom">
+        <h1>manipulacion de DOM</h1>
+
+        <h3>¿que es el dom?</h3>
+        <p>El browser construye una representación del documento HTML que se llama Document Object Model (DOM).
+          En este sentido, el DOM lo organiza en forma de nodos y Objetos que tienen Propiedades y métodos. Tendrá la siguiente forma:</p>
+
+
+          <img src="img/Andujar.jpg" alt="Maraiano">
+
+          <p>Esencialmente conecta las páginas web a los scripts o lenguajes de programación. Es decir, el DOM representa todo el contenido del documento HTML y permite que el script de JavaScript interactúe con él. Cuando buscamos un término en el campo de búsqueda de Google y se despliegan las opciones de búsqueda más frecuentes, esto sucede gracias a la interacción del código JavaScript con nuestro documento HTML (representado por Objetos) a través del DOM.</p>
+          <h3>¿Como se manipula?</h3>
+
+          <p>Como vimos, el DOM es la interfaz entre JavaScript y HTML+CSS.
+            Es decir, cuando cargamos un documento HTML+CSS en el browser, el DOM convierte
+            cada tag en un Objeto de JavaScript. Esto permite que el script manipule los elementos
+            HTML+CSS como si fueran Objetos.</p>
+
+            <h3>¿Cómo accedemos al objeto de JavaScript?</h3>
+            <p>si escribimos el codigo: document.
+               Nos va a mostrar el código HTML. Sin embargo, esto no muestra el verdadero Objeto.
+              Para acceder, deberíamos escribir:
+              console.dir(document)
+              Dentro de este Objeto podemos encontrar una gran cantidad de Propiedades y métodos.</p>
+
+              <h3>Como manipular los elementos</h3>
+
+              <p>Podemos seleccionar los elementos HTML desde la consola y, luego, acceder a sus
+                 Propiedades para modificar sus valores a través del comando querySelector.
+                 Para seleccionar un elemento desde la consola (o desde el script), debemos escribir
+                 document.querySelector()</p>
+
+                <section>
+                 <p >document.querySelector(): Es uno de los métodos para seleccionar un elemento.
+                  Devuelve solo el primer elemento que coincida con el selector CSS dado. El término
+                  “Query Selector” viene del inglés “consulta por selector”.</p> 
+                
+                </section>
+
+                <h4>Ejemplo</h4>
+                <pre class="pre-1">
+                  <code>
+                    // Función para cambiar el texto del párrafo
+        function cambiarTexto() {
+            // Obtener el elemento del párrafo por su ID
+            var parrafo = document.getElementById("miParrafo");
+            
+            // Cambiar el texto del párrafo
+            parrafo.textContent = "¡El texto ha sido cambiado!";
+        }
+                  </code>
+                </pre>
+
+
+                <h3>Como manipular el estilo</h3>
+
+
+              <p>Si quisiéramos modificar las Propiedades de un documento, podríamos seleccionar un
+                elemento con un querySelector y, luego, modificar su estilo. Sin embargo, esto es poco
+                escalable.
+                
+                La alternativa más práctica es definir una Clase con todas las propiedades CSS y aplicarla
+                usando JavaScript. Para eso, usaremos una propiedad llamada classList, en la que
+                seleccionamos un elemento y le agregamos una Clase determinada pasándola como
+                valor.</p>
+
+                <h4>Ejemplo</h4>
+                <pre class="pre-2">
+                  <code>
+                    function cambiarColorFondo() {
+                      // Obtiene el elemento de párrafo por su ID
+                      var parrafo = document.getElementById("miParrafo");
+                  
+                      // Cambia el color de fondo del párrafo
+                      parrafo.style.backgroundColor = "red"; // Puedes usar cualquier color 
+                  }
+                  
+                  </code>
+                </pre>
+                 
+                <h3>Como manipular el texto y contenido</h3>
+
+                <p>Además de manipular los estilos, podemos manipular los textos del HTML. Para eso,
+                  usaremos las Propiedades textContent (del inglés “contenido de texto”) y innerHTML.</p>
+
+                  <div class="alert alert-light" role="alert">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bibi-archive" viewBox="0 0 16 16">
+                      <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                    </svg>Importante: La propiedad textContent es para todos los elementos o tags HTML que
+                  muestren texto (h1,  span, p).
+                </div>
+                
+                <p>Veamos un ejemplo. Si quisiéramos modificar el texto presente en h1 ("primer h1!"),
+                   primero definimos la Variable y luego utilizamos textContent:</p>
+
+                   <pre class="pre-3">
+                    <code>
+  let h1 = document.querySelector("h1")
+  h1.textContent = "¡Hola!"
+                    </code>
+                   </pre>
+
+
+
+
+                   <h3>Manipular los atributos de un elemento</h3>
+
+                   <p>El método getAttribute() nos devuelve el valor del atributo especificado. Con el método
+                    setAttribute() definiremos un valor para el atributo.</p>
+                    <p>Supongamos que tenemos el siguiente tag:
+                      < a href="https://github.com/" id="btn-google">Ir a Google< /a>
+                      Por ahora el link nos lleva a “https://github.com/”, pero queremos modificarlo por
+                      “https://getbootstrap.com/”. Para hacerlo, primero debemos usar el método querySelector desde
+                      JavaScript: </p>
+
+                      <pre class="pre-4">
+                      <code>
+  let botonGoogle = document.querySelector("#btn-google");
+ 
+   botonGoogle.getAttribute("href") // Nos muestra cuál es el valor del atributo href.
+   botonGoogle.setAttribute("href", "https://getbootstrap.com/") // Cambia el valor del
+   atributo href por el valor que se pasa como segundo Parámetro.
+            
+                    </code>
+                     
+                    </pre>
+
+                   <h3>manipular muchos elementos</h3>
+                    <p>Para seleccionar varios elementos al mismo tiempo, existe el método querySelectorAll()
+                    querySelectorAll() devuelve un Node list (lista de nodos) de todos los elementos que
+                    coincidan con el selector.
+                    Si utilizamos querySelector("a"), solamente nos trae el primer link
+                    
+                    En cambio, querySelectorAll("a") nos devuelve una lista de nodos con todos los elementos de este tipo
+                    
+                  </p>
+                  <p>
+                    Tambien se puede agregar y remover los elementos.
+                    Para agregar un elemento dentro de otro usaremos el método appendChild. De esta
+                    forma, podemos incluir en un nodo un nuevo hijo.
+                    Y para remover un elemento de nuestro sitio web, usamos el método removeChild.
+
+                  </p>
+
+         </div>
+
+
+         <div class="container" id="eventos">
+          
+          <h1>Eventos</h1>
+
+          <h3>que es un evento</h3>
+
+          <p>
+            Los Eventos son acciones que activan los cambios que realiza JavaScript en los sitios
+            dinámicos. Gracias a esto, el DOM va a "escuchar" (listen) qué hace el usuario y activar
+            cierta parte del código, en base a cierto estímulo.
+            Vamos a usar el método eventListener (del inglés “escuchar el Evento”).
+            Para agregar un Evento, usamos addEventListener().
+          </p>
+          <pre>
+            <code>
+              function funcion_boton(){
+                console.log("¡Alguien hizo click en el boton!")
+                }
+
+                document.querySelector("button").addEventListener("click", funcion_boton)
+            </code>
+          </pre>
+              
+         <p> En este ejemplo, el primer argumento del método addEventListener() es un String ("click")
+             que indica el tipo de Evento que se estará "escuchando". El segundo argumento es una
+             Función denominada callback. Es una Función que no corre inmediatamente, sino que depende de otra cosa (el Evento del clickdel usuario).
+            </p>
+
+            <h3>Tipos de eventos</h3>
+
+            <p>Existen muchos Eventos distintos en JavaScript. Por ejemplo, los de Animación, los de
+              Llamada, los de Formulario, etc.</p>
+
+              <img src="img/eventos.jpg" alt="">
+              
+              <p>Podemos agregar Eventos a varios elementos al mismo tiempo a través de la palabra
+                reservada this.</p>
+
+
+                <h3>Eventos: mouseover Y mouseleave</h3>
+
+                <p>mouseover: Se activa cuando el mouse se pone sobre el elemento o alguno de sus descendientes.
+                  mouseleave: Se activa cuando el mouse sale del elemento (y sus descendientes).</p>
+                  <p>Si quisiéramos que el fondo cambiara a amarillo cada vez que el cursor se pose sobre el elemento (y se desactive cuando ya no está posicionado), podríamos usar mouseover y
+                    mouseleave:</p>
+
+                  <pre>
+                    <code>
+< p id="target">¡Hola!< /p>
+
+.highlight {
+background-color: yellow
+}
+let target = document.querySelector("#target")
+target.addEventListener("mouseover", function(){
+this.classList.add("highlight")
+})
+target.addEventListener("mouseleave", function(){
+this.classList.remove("highlight")
+})
+                    </code>
+                  </pre>
+
+                  <h3>Agrumentos de un evento</h3>
+
+                  <p>Cada vez que se dispara un Evento, el browser genera un Objeto JavaScript con
+                    información muy valiosa que recaba un eventListener: qué tipo de Evento fue, a qué hora
+                    se generó, en qué posición estaba el mouse, si el usuario hizo click, etc.
+                    
+                    Para poder acceder a él, debemos pasarle como argumento una Función Anónima que
+                    luego podamos loguear en la consola. Incluso, podemos acceder al valor de cualquiera de
+                    las Propiedades guardadas en él para, por ejemplo, reutilizarlo.
+                    para acceder a este Objeto JavaScript, debemos capturarlo como argumento dentro de la
+                    Función callback y para acceder a la información del Evento, usá Dot notation (como con cualquier Objeto).
+                  </p>
+                <div class="button">
+                  <h3>Propiedad .button</h3>
+
+                  <p>Indica si algún botón del mouse está siendo clickeado o no cuando
+                    ocurrió el Evento. En caso afirmativo, dará 1; sino, 0.
+                    
+                    Aplicado esto al ejemplo anterior, podríamos escribir el siguiente código:
+                    
+                    </p>
+                  <pre id="pre-5">
+                    <code>
+  document.body.addEventListener("mousemove", function(infoEvento) {
+  console.log("El mouse está en X: " + infoEvento.clientX + " Y: " +
+  infoEvento.clientY)
+  console.log("Está siendo clickeado:" + infoEvento.button)
+  })
+                    </code>
+                  </pre>
+
+
+                </div>
+
+
+                <h3>Eventos disparado por teclado</h3>
+
+                <p>Podemos hacer que se activen ciertas acciones a partir de una tecla presionada. Por
+                  ejemplo, podés asociar una tecla a un sonido o imagen. Esto sirve para lograr una mayor
+                  interacción con el usuario.</p>
+              
+                  <p class="d-inline-flex gap-1">
+                    
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3" >los eventos son:</button>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                          se produce al presionar cualquier tecla. Por ejemplo, si
+                          presionamos la tecla "Shift" y la tecla "a" al mismo tiempo, se producen dos Eventos.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          El Evento keyup se produce al soltar la tecla presionada. Es decir, cada tecla presionada
+                          (y soltada) disparará un nuevo Evento.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                          El Evento keypress también se produce al presionar una tecla. A diferencia del Evento
+                          keydown, si presionamos
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </div>
 
     <div id="contact" class="formulario">
         <h2 id="titulo-form"> contactanos</h2>
@@ -523,6 +830,7 @@
 
       </footer>
 
+      
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

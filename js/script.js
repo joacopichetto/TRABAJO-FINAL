@@ -28,6 +28,16 @@ let comisionBancaria = 0.05;
 (dineroEnLaCuenta+nuevoDeposito)* comisionBancaria
 
 
+
+
+
+
+const myCollapsible = document.getElementById('myCollapsible')
+myCollapsible.addEventListener('hidden.bs.collapse', event => {
+  // do something...
+})
+
+
 "Mi nombre es "+ nombre + " , tengo" + edad + " y estoy cursando en el" + stage + "."
 
 
@@ -278,3 +288,14 @@ function nombreEnCamelCase() {
                 despedir()
 
                 
+                document.getElementById("contact").addEventListener("submit", function(event) {
+                    var nombre = document.getElementById("mi_texto").value;
+                    var correo = document.getElementById("mi_correo").value;
+                    var documento = document.getElementById("mi_documento").value;
+                    var edad = document.getElementById("mi_edad").value;
+                    var telefono = document.getElementById("mi_telfono").value;
+                
+                    if (!nombre || !correo || !documento || !edad || !telefono) {
+                      alert("Por favor, complete todos los campos.");
+                      event.preventDefault(); 
+                    }
