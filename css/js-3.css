@@ -1,0 +1,209 @@
+body {
+    background-color: rgb(230, 219, 219);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+ }
+ 
+ #navbar {
+    background-color: rgb(50, 5, 62) !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .nav_item{
+    text-align: center;
+ font-size: 16px;
+ color: rgb(151, 149, 149);
+ display:inline;
+ border: 5px ridge black;
+ border-radius: 10px;
+ background-color: #0f0c29;
+ text-decoration: none;
+  }
+ 
+  .nav_item:hover {
+    color: #7676be;
+    padding: 10px;
+  }
+ 
+  #secciones{
+     background-color: transparent  !important;
+  }
+  .dropdown-item:hover{
+     background-color: #69017c !important;
+  }
+  #contactanos_nav:hover{
+     border-bottom: 5px solid #5b2b63;
+     padding-bottom: 1px;
+     width: 6%;
+  }
+
+  
+ 
+ 
+    
+ 
+ 
+ 
+
+#titulo-form{
+    background-color: #746bcc;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 100px;
+    
+    }
+    .box p{color: #000;
+    margin-bottom: 10px;}
+    .box h2{color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;}
+    
+    .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    }
+    .pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000;
+    margin-right: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: all 300ms ease;}
+    
+    .pie-pagina .grupo-1 .red-social a:hover{
+    color: red;
+    }
+    .pie-pagina .grupo-2{
+    background-color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    color: #000;
+    }
+    .pie-pagina .grupo-2 small{
+    font-size: 15px;
+    }
+    
+    @media screen and (max-width: 800px) {.pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    }
+    
+    }
+
+
+    
+    #container{
+      background-color: #ffffff;
+      position: relative;
+      width: 80px;
+      height: 40px;
+      box-shadow: inset 4px 4px 6px #1b1919,
+                     inset -4px -4px 6px #232020;
+      
+      border-radius: 25px; 
+      cursor: pointer;
+    }
+
+
+    #btn-cambio img{
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      border: 5px;
+      border-radius:20px;
+    }
+    #btn-cambio{
+      text-align: center;
+      color: #bd49d1;
+      border: 20px ;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .toggle{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      transform: scale(.7);
+      background-color: linear-gradient(145deg, #D8D8D8, #ffffff); 
+      border-radius: 25px;
+      box-shadow: 3px 3px 8px #C4C4C4,
+                  -3px -3px 8px #ffffff;
+  
+  
+  }
+
+  #container.active .toggle{
+   left: 40px;
+   
+}
+
+body.active{
+   background-color: #171414;
+}
+
+
+#boton-del-boton{
+   display: flex;
+   justify-content: center;
+}
+
+#appBg{
+   height: 180px;
+   width: 130px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+#appBg form{
+   height: 100%;
+   width: 100%;
+   background-color: rgb(214, 152, 18);
+}
+
+#appBg input[type=textfield]{
+   width: 100%;
+   height: 25%;
+   cursor: default;
+   background-color: black;
+   color: white;
+   padding: 15px;
+   text-align: right;
+   font-size: 20px;
+   border: 0;
+   outline: none;
+
+}
+
+#div-calculadora{
+   border: 20px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   text-align: center;
+   color: #bd49d1;
+}
+
+#div-calculadora img{
+   border: 5px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   border-radius: 20px;
+}
