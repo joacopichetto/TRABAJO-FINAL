@@ -391,6 +391,12 @@ color: rgb(240, 146, 165);
    color: blanchedalmond;
 }
 
+#variables-acumuladoras img{
+
+   width: 30%;
+
+}
+
 #OM{
    text-align: center;
    border: 20px ;
@@ -640,7 +646,119 @@ h4{
 }
 
 
+#paradigmas{
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #3498db;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 20px;
+      width: 1000px;
+      height: 950px;
+    }
+
+
+#paradigmas img{
+   padding: 20px;
+   width: 70%;
+
+}
+
+
+.mi-lista {
+ list-style-type: none;
+   padding: 0;
+   margin: 0 auto;
+   background-color: #24243e; 
+   border: 1px solid #ccc; 
+   border-radius: 5px;
+   width: 200px; 
+ }
+ 
+ 
+ .mi-lista li {
+   padding: 10px; 
+   border-bottom: 1px solid #3498db; 
+ }
+ 
+ 
+ .mi-lista li:nth-child(even) {
+   background-color: rgb(53, 185, 119); 
+ }
+ 
+ 
+ .mi-lista li:last-child {
+   border-bottom: none; 
+ }
+
+
+#Poo h1{
+    color: rgb(225, 61, 20);
+   text-decoration-line: underline;
+
+}
+ #Poo{
+   
+   border: #69017c solid 10px;
+
+ }
+
+
+.lista-2 {
+   list-style-type: square; 
+   padding: 10px; 
+   background-color: #ffcc00; 
+   border: 2px solid #ff9900; 
+   border-radius: 8px; 
+   width: 250px; 
+ }
+ 
+ 
+ .lista-2 li {
+   padding: 5px; 
+   color: #333; 
+   font-weight: bold; 
+ }
+ 
+ 
+ .lista-2 li:nth-child(even) {
+   background-color: #ffdb4d; 
+ }
+ 
+
+.pre-6{
+   margin: 0 auto;
+   text-align: left;
+   background-color: #000;
+   color: #09f;
+   width: 35%;
+}
+
+.pre-5{
+   margin: 0 auto;
+   text-align: left;
+   background-color: #000;
+   color: rgb(254, 254, 2);
+   width: 50%;
+}
 
 
 
+#constructor{
 
+   background-color: salmon ;
+   
+}
+
+#propiedades{
+   background-color: salmon ;
+   
+
+}
+
+#this{
+   background-color: salmon ;
+  
+}

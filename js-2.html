@@ -700,27 +700,7 @@ this.classList.remove("highlight")
 
 
 
-                <div>
-
-                  <h1> Programacion orientada a objetos</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
+                
 
 
                 <h3>Eventos disparado por teclado</h3>
@@ -759,30 +739,145 @@ this.classList.remove("highlight")
                       </div>
                     </div>
                   </div>
+                
+                
+                </div>
+
+                <div id="paradigmas" class="conteiner">
+
+                  
+
+                  <h1>Paradigmas</h1>
+
+                  <p>son métodos de programación de software que sirven para resolver un problema de sistemas o para llegar a los resultados esperados.
+                    Hay cinco paradigmas distintos:
+                  </p>
+                  <ul class="mi-lista">
+                    <li>imperativo</li>
+                    <li>logico</li>
+                    <li>funcional</li>
+                    <li>orientado objetos</li>
+                    <li>declarativo</li>
+                  </ul>
+                  <img src="img/andressss.jpg" alt="andres">
+
+
+                  <p>Hasta el momento, trabajamos con JavaScript bajo el paradigma Imperativo, resolviendo
+                    los problemas de manera secuencial. Es decir, escribimos instrucciones, paso a paso, y
+                    utilizamos ciclos y condiciones para llegar a una solución.
+                    La mayoría de las personas que aprenden a programar se inician bajo este paradigma.
+                    Sin embargo, JavaScript se conoce como un lenguaje multiparadigma.
+                    En este módulo abordaremos JavaScript desde un nuevo paradigma: el Paradigma
+                    Orientado a Objetos.</p>
+                 
+                  </div>
+
+                  <div class="container" id="Poo">
+
+                    <h1>Programacion orientada a objetos</h1>
+
+                    <p>La Programación Orientada a Objetos (POO) es una manera de programar que facilita el
+                      desarrollo de sistemas complejos y de gran tamaño.
+                      Esta técnica nació a fines de los años 80 y se volvió popular rápidamente porque es más
+                      cercana a cómo expresaríamos las cosas en la vida real: dividiendo los componentes de
+                      un programa en Objetos que poseen datos (Propiedades) y comportamientos (Métodos)
+                      que se comunican entre sí.
+                    </p>
+
+                      <p>
+                        Dentro de sus ventajas, podemos destacar:
+
+                      </p>
+
+
+                    <ul class="lista-2">
+                     <li> Fácil de modificar.</li>
+                     <li> Escalabilidad.</li>
+                     <li> Reusabilidad.</li>
+                     <li> Mantenibilidad.</li>
+                    </ul> 
+
+                    <p>POO, podemos optimizar nuestro código, reutilizando componentes. Para eso,
+                      existen las Clases.
+                    Por ejemplo</p>
+
+                    <pre class="pre-5">
+                      <code>
+// Definición de una clase llamada "Persona"                       
+class Persona {
+// Constructor de la clase
+constructor(nombre, edad) {
+this.nombre = nombre;
+this.edad = edad;
+}
+                        
+// Método para mostrar información de la persona
+presentarse() {
+console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años.`);
+}
+}
+                        
+// Crear instancias de la clase Persona
+const persona1 = new Persona("Juan", 30);
+const persona2 = new Persona("María", 25);
+                        
+// Acceder a los métodos y propiedades de las instancias
+persona1.presentarse(); // Salida: "Hola, soy Juan y tengo 30 años."
+persona2.presentarse(); // Salida: "Hola, soy María y tengo 25 años."
+                         </code>
+
+
+                    </pre>
+
+                    <h1>Sintaxis De Una Clase</h1>
+
+                    <p>Para generar una Clase desde la cual podamos construir Objetos, debemos respetar una
+                      sintaxis. Veamos un ejemplo:</p>
+
+
+
+                      <pre class="pre-6">
+                        <code>
+class Auto{
+constructor(marca,modelo,año,color,precio){
+this.marca = marca;
+this.modelo = modelo;
+this.año = año;
+this.color = color;
+this.precio = precio;
+}                         
+}
+                        </code>
+                      </pre>
+
+                      <p>para construir una Clase tenemos que
+                        usar algunas palabras que tienen un significado especial:</p>
+
+                        <p id="constructor">constructor(): Se trata de un método especial para la creación e inicialización de un
+                          Objeto. Puede haber solo un constructor por Clase.</p>
+
+                          <p id="propiedades">Propiedades: Las Propiedades son similares a las Variables, porque nos permiten
+                            definir las características que tendrán los Objetos (posteriormente instanciados). En
+                            nuestro ejemplo, las Propiedades son: marca, modelo, año, color y precio.</p>
+
+                            <p id="this">this: Hace referencia al atributo propio de la Clase. Esto nos permite diferenciar el valor
+                              que llega como Parámetro del Método constructor, de la Propiedad en sí. Por ejemplo:
+                              this.marca = marca
+                              La palabra marca después del = toma el valor que recibe por parámetro en el constructor.
+                              Ese valor se asigna a la Propiedad marca, que es propia del Objeto. La keyword this sirve
+                              para diferenciar una de la otra.</p>
+                  
 
 
 
 
 
 
+                  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         </div>
+                       
+         
+                  
 
     <div id="contact" class="formulario">
         <h2 id="titulo-form"> contactanos</h2>
