@@ -854,24 +854,64 @@ this.precio = precio;
                         usar algunas palabras que tienen un significado especial:</p>
 
                         <p id="constructor">constructor(): Se trata de un método especial para la creación e inicialización de un
-                          Objeto. Puede haber solo un constructor por Clase.</p>
+                          Objeto. Puede haber solo un constructor por Clase.
+                        </p>
 
                           <p id="propiedades">Propiedades: Las Propiedades son similares a las Variables, porque nos permiten
                             definir las características que tendrán los Objetos (posteriormente instanciados). En
-                            nuestro ejemplo, las Propiedades son: marca, modelo, año, color y precio.</p>
+                            nuestro ejemplo, las Propiedades son: marca, modelo, año, color y precio.
+                          </p>
 
                             <p id="this">this: Hace referencia al atributo propio de la Clase. Esto nos permite diferenciar el valor
                               que llega como Parámetro del Método constructor, de la Propiedad en sí. Por ejemplo:
                               this.marca = marca
                               La palabra marca después del = toma el valor que recibe por parámetro en el constructor.
                               Ese valor se asigna a la Propiedad marca, que es propia del Objeto. La keyword this sirve
-                              para diferenciar una de la otra.</p>
+                              para diferenciar una de la otra.
+                            </p>
+
                   
 
+                          <section id="objetoss">
+                              <h3>Objetos</h3>
+
+                              <p>Los objetos son instanciasde una clase, donde podemos crear diferentes objetos a partir del mismo "molde"
+                                 Estos objetos se refieren a algo abstracto o conceptual.
+                              </p>
+                              
+                              <h4>Ejemplo</h4>
+                              <p>
+                                supongamos que queremos hacer 2 objetos, uno que sea mi auto actual y otro el ideal.
+                                Estos Objetos forman parte de la misma clase auto.
+                                Podemos emplear la sguiente sintaxis.
+                              </p>
+
+                              <pre class="pre-7">
+                                <code>
+Let miauto = new auto ("Peugeot", "208", 2018, "Azul", 400000 )
+Let autoideal = new auto ("Dodge", "1500", 1973, "blanco", 25000)
+
+ Class auto {
+    constructor (marca ,modelos ,año ,color ,precio )
+    this.marca = marca
+    this.modelo = modelo 
+    this.año = año
+    this.color = color
+    this.precio = precio
+  }
+                                </code>
+                              </pre>
+
+                              <h3>Como acceder a los datos de nustros objetos</h3>
+
+                              <p>
+                                para acceder a los valores de nuestros objetos podemos u
+                              </p>
 
 
+                            </section>
 
-
+                  
 
                   </div>
 

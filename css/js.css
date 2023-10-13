@@ -647,8 +647,8 @@ h4{
 
 
 #paradigmas{
-      margin: 0 auto;
       padding: 20px;
+      margin: 0 auto;
       text-align: center;
       background-color: #3498db;
       border-top-left-radius: 50px;
@@ -762,3 +762,23 @@ h4{
    background-color: salmon ;
   
 }
+
+.pre-7{
+   margin: 0 auto;
+   text-align: left;
+   background-color: #000;
+   color: #e3a90b;
+   width: 45%;
+}
+
+#objetoss{
+   text-align: center;
+   padding: 20px;
+   margin: 0 auto;
+   background-color: green;
+   border-radius: 15;
+
+}
+
+
+
