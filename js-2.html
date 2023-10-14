@@ -905,13 +905,123 @@ Let autoideal = new auto ("Dodge", "1500", 1973, "blanco", 25000)
                               <h3>Como acceder a los datos de nustros objetos</h3>
 
                               <p>
-                                para acceder a los valores de nuestros objetos podemos u
+                                para acceder a los valores de nuestros objetos podemos usar tanto Dot como Bracket
+                                notation.
+                                Por ejemplo, para acceder al valor de la Propiedad color de cada auto, deberíamos
+                                respetar la siguiente sintaxis:
+                                autoIdeal.color
+                                autoIdeal["color"] 
+                                En ambos casos, obtenemos el valor verde.
                               </p>
+
+                              <h3>Cómo agregar propiedades a nuestros objetos</h3>
+                              
+                                <p>Para agregar Propiedades a nuestros Objetos también podemos usar Dot o Bracket
+                                 notation.
+                                 Por ejemplo, si quisiéramos agregar una Propiedad que tenga un valor booleano
+                                 (tieneVTV) podríamos escribir:
+                                 autoIdeal.tieneVTV = false
+
+                                 De esta manera, modificamos el Objeto autoIdeal. Sin embargo, el Objeto miAuto permanece igual:
+                                 Recordá: Si bien estos Objetos comparten la misma Clase, son independientes uno del otro.
+                                </p>
+
+
+                                <h3>Cómo eliminar propiedades de nuestros objetos</h3>
+
+                                <p>Para eliminar una Propiedad debemos usar el operador delete.
+                                  Veamos un ejemplo. Si quisiéramos eliminar la Propiedad "color" del Objeto miAuto,
+                                  podríamos escribir:
+                                  delete miAuto.color
+                                </p>
+
+                                
 
 
                             </section>
 
                   
+
+                  </div>
+
+                  <div>
+                    <h1>Metodos</h1>
+                  <p>
+                    Como ya vimos, los Objetos poseen datos (Propiedades) y comportamientos (Métodos).
+                    Podemos pensar a los Métodos como Funciones que pueden o no recibir un parámetro
+                    y que sirven para la correcta realización de distintas tareas. Pueden ser especificados al
+                    definir la Clase.
+                  </p>
+
+                  <h3>Cómo crear un método</h3>
+
+                  <p>Siguiendo el ejemplo anterior, veamos cómo crear un método modificando la Clase Auto.</p>
+
+                  <pre>
+                    <code>
+class Auto {
+constructor(marca, modelo, año, color, precio, sucio) {
+this.marca = marca
+this.modelo = modelo
+this.año = año
+this.color = color
+this.precio = precio
+this.sucio = sucio
+}
+mostrarAuto() {
+console.log("Un hermoso " + this.marca + " " + this.modelo + " color " +
+this.color)
+}
+lavarAuto() {
+this.sucio = false
+}
+}
+                    </code>
+                  </pre>
+
+                  <p>Ahora instanciamos 2 Objetos con los nuevos valores para la Propiedad sucio.</p>
+
+                  <pre>
+                    <code>
+let miAuto = new Auto("Peugeot", "208", 2018, "negro", 400000, true)
+let autoIdeal = new Auto("Dodge", "1500", 1973, "verde", 25000, true)
+                    </code>
+                  </pre>
+
+                  <p>Los Objetos instanciados de tipo Auto ahora pueden invocar el Método mostrarAuto usando Dot o Bracket notation, seguido del nombre del método y los paréntesis.</p>
+
+                   <pre>
+                     <code>
+miAuto.mostrarAuto(); // "Un hermoso Peugeot 208 color negro"
+autoIdeal.mostrarAuto(); // "Un hermoso Dodge 1500 color verde"
+                     </code>
+                  </pre>
+
+                  <p>Ahora supongamos que quisiéramos modificar el valor de la Propiedad sucio del Objeto
+                    autoIdeal, sin modificarlo en el Objeto miAuto.
+                  
+                  </p>
+
+                  <p>
+                    Deberíamos escribir la siguiente sentencia:
+                    autoIdeal.lavarAuto()
+                    
+                  </p>
+                  
+                  <p>Esto modifica el valor de la Propiedad sucio del Objeto autoIdeal, asignándole el valor false.
+                     Ahora, usando Dot notation podemos ver que este valor es distinto en cada Objeto:
+                     autoIdeal.sucio
+                     false
+                     miAuto.sucio
+                     true
+                  </p>
+
+
+
+
+
+
+
 
                   </div>
 
