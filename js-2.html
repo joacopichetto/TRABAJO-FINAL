@@ -944,7 +944,7 @@ Let autoideal = new auto ("Dodge", "1500", 1973, "blanco", 25000)
 
                   </div>
 
-                  <div>
+                  <div id="metodos" class="container">
                     <h1>Metodos</h1>
                   <p>
                     Como ya vimos, los Objetos poseen datos (Propiedades) y comportamientos (Métodos).
@@ -957,7 +957,7 @@ Let autoideal = new auto ("Dodge", "1500", 1973, "blanco", 25000)
 
                   <p>Siguiendo el ejemplo anterior, veamos cómo crear un método modificando la Clase Auto.</p>
 
-                  <pre>
+                  <pre class="pre-8">
                     <code>
 class Auto {
 constructor(marca, modelo, año, color, precio, sucio) {
@@ -981,7 +981,7 @@ this.sucio = false
 
                   <p>Ahora instanciamos 2 Objetos con los nuevos valores para la Propiedad sucio.</p>
 
-                  <pre>
+                  <pre class="pre-9">
                     <code>
 let miAuto = new Auto("Peugeot", "208", 2018, "negro", 400000, true)
 let autoIdeal = new Auto("Dodge", "1500", 1973, "verde", 25000, true)
@@ -990,7 +990,7 @@ let autoIdeal = new Auto("Dodge", "1500", 1973, "verde", 25000, true)
 
                   <p>Los Objetos instanciados de tipo Auto ahora pueden invocar el Método mostrarAuto usando Dot o Bracket notation, seguido del nombre del método y los paréntesis.</p>
 
-                   <pre>
+                   <pre class="pre-10">
                      <code>
 miAuto.mostrarAuto(); // "Un hermoso Peugeot 208 color negro"
 autoIdeal.mostrarAuto(); // "Un hermoso Dodge 1500 color verde"
@@ -1042,64 +1042,28 @@ autoIdeal.mostrarAuto(); // "Un hermoso Dodge 1500 color verde"
       </div>
 
 
-      <footer class="bg-light text-dark pt-5 pb-4 mx-auto " id="footerr">
-        <div class="container text-center text-md-start">
-            <div class="row text-center text-md-start">
-
-                <div class="col-md-3 col-ig-3 col-xl-3 mx-auto mt-3">
-                 
-
-                   <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">nosotros</h5>
-                   <hr class="mb-4">
-
-                    <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam dignissimos in laborum officiis similique tenetur perspiciatis aut, ea beatae porro soluta eius cum explicabo, quaerat quibusdam, temporibus mollitia quisquam
-                    </p>
-                    
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Seguime en</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/briciopincha/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/briciopincha_11" class="fa fa-twitter"></a>
                 </div>
-
-            <div>
-
-            <div id="contacto" class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weigth-bold text-primary">contacto</h5>
-                <hr class="mb-4">
-                <p>
-                    <li class="fas fa-home me-3">Argentina, BSAS La Plata</li>
-                </p>
-                <p>
-                    <li class="fas fa-envelope me-3">joaquinpichetto@gmail.com</li>
-                </p>
-                <p>
-                    <li class="fas fa-phone me-3">2211234567</li>
-                </p>
             </div>
-
-            <div class="text-center mb-2">
-                <p>copyright todos los derechos reservados</p>
+    
+            <div class="box">
+                <h2>Sobre nosotros</h2>
+                 <p>nos que poner</p>
+                 <p> nose que poner</p>
+    
+    
             </div>
-
-            <div class="text-center">
-
-                <ul class="list-unstyled list-inline">
-
-                    <li class="list-inline-item"> 
-                        <a href="#" class="text-dark"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item"> 
-                        <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item"> 
-                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
-                    </li>
-
-                </ul>
-
-            </div>
-            
-            
         </div>
-
-      </footer>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Bricio Matos y joaquin pichetto </b>- Todos Los Derechos Reservados.</small>
+        </div>
+    </footer>
 
       
     <script src="js/script.js"></script>

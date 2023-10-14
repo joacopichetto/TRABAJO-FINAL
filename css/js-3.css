@@ -5,37 +5,37 @@ body {
  }
  
  #navbar {
-    background-color: rgb(50, 5, 62) !important;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+   background-color: rgb(50, 5, 62) !important;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
- .nav_item{
-    text-align: center;
- font-size: 16px;
- color: rgb(151, 149, 149);
- display:inline;
- border: 5px ridge black;
- border-radius: 10px;
- background-color: #0f0c29;
- text-decoration: none;
-  }
- 
-  .nav_item:hover {
-    color: #7676be;
-    padding: 10px;
-  }
- 
-  #secciones{
-     background-color: transparent  !important;
-  }
-  .dropdown-item:hover{
-     background-color: #69017c !important;
-  }
-  #contactanos_nav:hover{
-     border-bottom: 5px solid #5b2b63;
-     padding-bottom: 1px;
-     width: 6%;
-  }
+.nav_item{
+  text-align: center;
+font-size: 16px;
+color: rgb(151, 149, 149);
+display:inline;
+border: 5px ridge black;
+border-radius: 10px;
+background-color: #0f0c29;
+text-decoration: none;
+}
+
+.nav_item:hover {
+  color: #7676be;
+  padding: 10px;
+}
+
+#secciones{
+   background-color: transparent  !important;
+}
+.dropdown-item:hover{
+   background-color: #69017c !important;
+}
+#contactanos_nav:hover{
+   border-bottom: 5px solid #5b2b63;
+   padding-bottom: 1px;
+   width: 6%;
+}
 
   
  
@@ -301,6 +301,7 @@ main {
 }
 
 #contadorr{
+   padding: 30px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -317,6 +318,7 @@ main {
 
 
 #contadorr{
+   padding: 30px;
    border: 20px;
    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    text-align: center;
@@ -340,3 +342,45 @@ main {
    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    border-radius: 20px;
 }
+
+
+
+
+#adivinanza {
+   max-width: 400px;
+   margin: 0 auto;
+   background-color: rgb(230, 219, 219);
+   border: 1px solid #ddd;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+.input{
+
+   display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+}
+ #resultado {
+   margin-top: 20px;
+   font-size: 18px;
+   color: #333;
+ }
+
+
+
+ #ej{
+
+   text-align: center;
+   background-color: pink;
+   
+   border-radius: 15px;
+
+ }
+
+ #ej h1{
+    
+ }

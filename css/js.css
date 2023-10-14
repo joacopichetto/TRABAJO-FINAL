@@ -4,7 +4,7 @@ body {
      background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     
+   
  }
  
  #navbar {
@@ -777,6 +777,85 @@ h4{
    margin: 0 auto;
    background-color: green;
    border-radius: 15;
+
+}
+
+
+#metodos{
+   text-align: center;
+   padding: 20px;
+   background-color: #F2994A;
+   border-radius: 15px;
+
+    
+}
+
+
+.pre-8{
+   margin: 0 auto;
+   text-align: left;
+   background-color: #000;
+   color: #e3a90b;
+   width: 60%;
+
+}
+
+.pre-9 {
+   margin: 0 auto;
+   text-align: left;
+   background-color: #000;
+   color: #e3a90b;
+   width: 50%;
+}
+
+.pre-10{
+   margin: 0 auto;
+   text-align: left;
+   background-color: #000;
+   color: #e3a90b;
+   width: 45%;
+}
+
+.pie-pagina .grupo-1{
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 50px;
+   padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .red-social a{
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: #000;
+margin-right: 10px;
+background-color: #fff;
+text-align: center;
+transition: all 300ms ease;}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+   color: red;
+}
+.pie-pagina .grupo-2{
+   background-color: #fff;
+   padding: 15px 10px;
+   text-align: center;
+   color: #000;
+}
+.pie-pagina .grupo-2 small{
+   font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {.pie-pagina .grupo-1{
+   width: 90%;
+   grid-template-columns: repeat(1, 1fr);
+   grid-gap: 50px;
+   padding: 45px 0px;
+}
 
 }
 

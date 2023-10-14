@@ -155,12 +155,76 @@
         <button id="los-botones" class="boton disminuir">disminuir</button>
         <button id="los-botones" class="boton resetear">resetear</button>
         <button id="los-botones" class="boton aumentar">Aumentar</button>
-        <p>un contador, nada del otro mundo, esta bueno y es muy facil de hacer.<br>
-        es el mas sencillo de hacer, hay muchisimos tutoriales en youtube de 5 minutos para realizarlo.</p> 
+        <p>un contador, nada del otro mundo, esta bueno y es muy facil de hacer.
+          es el mas sencillo de hacer, hay muchisimos tutoriales en youtube de 5 minutos para realizarlo.</p>
+        
+
+
+        
+      </div>
+
+    <br>
+    <br>
+    <br>
+
+
+      <div id="adivinanza" class="container">
+
+          
+          <h1>adivina el numero</h1>
+
+
+
+        <p>Ingresa el rango para adivinar el número:</p>
+        <input type="number" id="min" placeholder="Valor mínimo" class="input">
+        <input type="number" id="max" placeholder="Valor máximo" class="input">
+        <button onclick="iniciarJuego()">Iniciar Juego</button>
+        
+        <p id="resultado"></p>
+        <input type="number" id="adivinaNumero" placeholder="Tu adivinanza">
+        <button onclick="verificarAdivinanza()">Verificar</button>
+        
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="container" id="ej">
+        <h1>explicacion</h1>
+
+        <p>este es un juego de adivianza donde tenes ma trabajo en js que en html y css ahora te mostramos como se hace</p>
+
+
+        <h1>HTML</h1>
+
+         
+        <pre>
+          <code>
+
+            < div class="container">
+              < h1>Juego de Adivinanza< /h1>
+              < p>Ingresa el rango para adivinar el número:< /p>
+              < input type="number" id="min" placeholder="Valor mínimo">
+              < input type="number" id="max" placeholder="Valor máximo">
+              < button onclick="iniciarJuego()">Iniciar Juego</button>
+          
+              < p id="resultado"></p>
+              < input type="number" id="adivinaNumero" placeholder="Tu adivinanza" disabled>
+              < button onclick="verificarAdivinanza()" disabled>Verificar</button>
+            < /div>
+
+
+
+
+          </code>
+        </pre>
+
+
 
       </div>
 
-
+    
 
        
 

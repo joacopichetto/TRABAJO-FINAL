@@ -94,3 +94,40 @@ botones.forEach(boton =>{
 
     })
 })
+
+
+let numeroAleatorio;
+          let intentos = 0;
+        
+          function iniciarJuego() {
+            const min = parseInt(document.getElementById("min").value);
+            const max = parseInt(document.getElementById("max").value);
+        
+            if (isNaN(min) || isNaN(max) || min >= max) {
+              alert("Ingresa un rango válido.");
+              return;
+            }
+        
+            numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+            intentos = 0;
+        
+            document.getElementById("resultado").textContent = "";
+            document.getElementById("adivinaNumero").value = "";
+            document.getElementById("adivinaNumero").disabled = false;
+            document.getElementById("adivinaNumero").setAttribute("max", max);
+            document.getElementById("adivinaNumero").setAttribute("min", min);
+          }
+        
+          function verificarAdivinanza() {
+            intentos++;
+            const adivina = parseInt(document.getElementById("adivinaNumero").value);
+        
+            if (adivina === numeroAleatorio) {
+              document.getElementById("resultado").textContent = `¡Adivinaste en ${intentos} intentos!`;
+              document.getElementById("adivinaNumero").disabled = true;
+            } else if (adivina < numeroAleatorio) {
+              document.getElementById("resultado").textContent = `Demasiado bajo. Intento #${intentos}`;
+            } else {
+              document.getElementById("resultado").textContent = `Demasiado alto. Intento #${intentos}`;
+            }
+          }
