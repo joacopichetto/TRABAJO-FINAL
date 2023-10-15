@@ -131,3 +131,15 @@ let numeroAleatorio;
               document.getElementById("resultado").textContent = `Demasiado alto. Intento #${intentos}`;
             }
           }
+
+
+          function actualizarReloj() {
+            var fecha = new Date();
+            var hora = fecha.getHours();
+            var minutos = fecha.getMinutes();
+            var segundos = fecha.getSeconds();
+            var tiempo = `${hora < 10 ? '0' : ''}${hora}:${minutos < 10 ? '0' : ''}${minutos}:${segundos < 10 ? '0' : ''}${segundos}`;
+            document.getElementById("reloj").textContent = tiempo;
+          }
+      
+          setInterval(actualizarReloj, 1000);

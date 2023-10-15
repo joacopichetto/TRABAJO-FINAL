@@ -168,7 +168,7 @@
     <br>
 
 
-      <div id="adivinanza" class="container">
+      <div id="adivinanza" class="container" class="toggle">
 
           
           <h1>adivina el numero</h1>
@@ -191,7 +191,7 @@
       <br>
 
       <div class="container" id="ej">
-        <h1>explicacion</h1>
+        <h1>Explicacion</h1>
 
         <p>este es un juego de adivianza donde tenes ma trabajo en js que en html y css ahora te mostramos como se hace</p>
 
@@ -199,7 +199,7 @@
         <h1>HTML</h1>
 
          
-        <pre>
+        <pre class="rer">
           <code>
 
             < div class="container">
@@ -207,22 +207,178 @@
               < p>Ingresa el rango para adivinar el número:< /p>
               < input type="number" id="min" placeholder="Valor mínimo">
               < input type="number" id="max" placeholder="Valor máximo">
-              < button onclick="iniciarJuego()">Iniciar Juego</button>
+              < button onclick="iniciarJuego()">Iniciar Juego< /button>
           
               < p id="resultado"></p>
               < input type="number" id="adivinaNumero" placeholder="Tu adivinanza" disabled>
-              < button onclick="verificarAdivinanza()" disabled>Verificar</button>
+              < button onclick="verificarAdivinanza()" disabled>Verificar< /button>
             < /div>
+          </code>
+        </pre>
 
+        <h1>CSS</h1>
 
+        <pre class="rar">
+          <code>
+            #adivinanza {
+              color: #bd49d1;
+              max-width: 400px;
+              margin: 0 auto;
+              background-color: rgb(230, 219, 219);
+              border: 1px solid #ddd;
+              padding: 20px;
+              border-radius: 5px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+           
+           .input{
+           
+              display: block;
+                 width: 100%;
+                 padding: 10px;
+                 margin: 10px 0;
+                 font-size: 16px;
+           }
+            #resultado {
+              margin-top: 20px;
+              font-size: 18px;
+              color: #333;
+            }
+           
+          </code>
+        </pre>
 
+        <h1>JS</h1>
 
+        <pre class="ron">
+          <code>
+
+            let numeroAleatorio;
+          let intentos = 0;
+        
+          function iniciarJuego() {
+            const min = parseInt(document.getElementById("min").value);
+            const max = parseInt(document.getElementById("max").value);
+        
+            if (isNaN(min) || isNaN(max) || min >= max) {
+              alert("Ingresa un rango válido.");
+              return;
+            }
+        
+            numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+            intentos = 0;
+        
+            document.getElementById("resultado").textContent = "";
+            document.getElementById("adivinaNumero").value = "";
+            document.getElementById("adivinaNumero").disabled = false;
+            document.getElementById("adivinaNumero").setAttribute("max", max);
+            document.getElementById("adivinaNumero").setAttribute("min", min);
+          }
+        
+          function verificarAdivinanza() {
+            intentos++;
+            const adivina = parseInt(document.getElementById("adivinaNumero").value);
+        
+            if (adivina === numeroAleatorio) {
+              document.getElementById("resultado").textContent = `¡Adivinaste en ${intentos} intentos!`;
+              document.getElementById("adivinaNumero").disabled = true;
+            } else if (adivina < numeroAleatorio) {
+              document.getElementById("resultado").textContent = `Demasiado bajo. Intento #${intentos}`;
+            } else {
+              document.getElementById("resultado").textContent = `Demasiado alto. Intento #${intentos}`;
+            }
+          }
           </code>
         </pre>
 
 
 
+
+
       </div>
+
+      <div id="Reloj" class="container">
+        <h2>Reloj en Tiempo Real</h2>
+        <p id="reloj"></p>
+
+
+
+        <h1>Explicacion</h1>
+
+
+        <h1>HTML</h1>
+
+        <pre class="enpunto">
+          <code>
+
+            < div id="Reloj" class="container">
+              < h2>Reloj en Tiempo Real< /h2>
+              < p id="reloj">< /p>
+      
+
+            
+          </code>
+        </pre>
+
+        <h1>CSS</h1>
+
+        <pre class="ymedia">
+          <code>
+
+            #Reloj {
+   
+              background-color: pink;
+              color: #bd49d1;
+              text-align: center;
+              padding: 20px;
+            }
+           
+            #reloj {
+              font-size: 2rem;
+              font-weight: bold;
+              border: 2px solid #333;
+              border-radius: 10px;
+              padding: 10px;
+              background-color: #fff;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+              display: inline-block;
+            }
+
+            
+          </code>
+        </pre>
+
+        <h1>JS</h1>
+
+        <pre class="ycuarto">
+          <code>
+
+            function actualizarReloj() {
+              var fecha = new Date();
+              var hora = fecha.getHours();
+              var minutos = fecha.getMinutes();
+              var segundos = fecha.getSeconds();
+              var tiempo = `${hora < 10 ? '0' : ''}${hora}:${minutos < 10 ? '0' : ''}${minutos}:${segundos < 10 ? '0' : ''}${segundos}`;
+              document.getElementById("reloj").textContent = tiempo;
+            }
+        
+            setInterval(actualizarReloj, 1000);
+            
+          </code>
+        </pre>
+
+      </div>
+      
+      
+
+
+
+
+
+
+
+
+      
 
     
 
