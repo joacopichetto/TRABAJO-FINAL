@@ -193,6 +193,7 @@ transform: scale(1.1);
 }
 
 .card {
+  margin: 0 auto;
   display: inline-block;
   padding-bottom: 20px;
   padding-inline: 10px;
