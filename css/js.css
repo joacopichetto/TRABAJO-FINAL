@@ -759,6 +759,12 @@ h4{
    background-color: salmon ;
   
 }
+#objetos p{
+  color: beige;
+}
+h4{
+  color: yellow;
+}
 
 .pre-7{
    margin: 0 auto;
